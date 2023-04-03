@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+  <title>AdminSite</title>
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <section id="sidebar">
+
+    <a href="#" class="brand"><i class='bx bxs-smile icon'></i>
+      <h1>Easital</h1>
+    </a>
+    <ul class="side-menu">
+      <li>
+        <a href="#"><i class='bx bxs-inbox icon'></i> Dashboard <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">eCommerce</a></li>
+        </ul>
+      </li>
+      <li class="divider" data-text="main">Main</li>
+      <li>
+        <a href="#"><i class='bx bxs-inbox icon'></i> eCommerce <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="shop-details.html">Details</a></li>
+          <li><a href="wishlist.html">Wishlist</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class='bx bxs-chart icon'></i> Charts</a></li>
+      <li><a href="#"><i class='bx bxs-widget icon'></i> Widgets</a></li>
+      <li class="divider" data-text="table and forms">Table and forms</li>
+      <li><a href="#"><i class='bx bx-table icon'></i> Tables</a></li>
+      <li>
+        <a href="#"><i class='bx bxs-notepad icon'></i> Forms <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Basic</a></li>
+          <li><a href="#">Select</a></li>
+          <li><a href="#">Checkbox</a></li>
+          <li><a href="#">Radio</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <!-- NAVBAR -->
+  <nav class="content">
+    <i class='bx bx-menu toggle-sidebar'></i>
+    <form action="#">
+      <div class="form-group">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search icon'></i>
+      </div>
+    </form>
+    <a href="#" class="nav-link">
+      <i class='bx bxs-bell icon'></i>
+      <span class="badge">5</span>
+    </a>
+    <a href="#" class="nav-link">
+      <i class='bx bxs-message-square-dots icon'></i>
+      <span class="badge">8</span>
+    </a>
+    <span class="divider"></span>
+    <div class="profile">
+      <img
+        src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        alt="">
+      <ul class="profile-link">
+        <li><a href="#"><i class='bx bxs-user-circle icon'></i> Profile</a></li>
+        <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+        <li><a href="#"><i class='bx bxs-log-out-circle'></i> Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- NAVBAR -->
+
+  <!-- MAIN -->
+  <main class="content">
+    <!-- Welcome Section Start-->
+    <section>
+      <div class="border-[1px] bg-[#F7F7F7] border-opacity-50 p-3 mb-5 rounded-md">
+        <div class="rounded-md">
+          <h1 class="text-base"><span class="text-[#333333] opacity-50">Home ></span><span
+              class="text-[#333333] opacity-50"> Components ></span> <span class="text-[#333333] ">Accordion</span>
+          </h1>
+        </div>
+      </div>
+      <div class="flex">
+        <div
+          class="w-3/12 max-h-[1316px] product-filter transition-all duration-500  xl:block hidden bg-white rounded-md border-[1px] border-gray-300 p-5 mr-4">
+          <div class="flex justify-between">
+            <p class="text-[#0B75B1] font-normal text-lg">Filters</p>
+            <img src="./assets/images/icons/cross.png" id="close-btn" alt="">
+          </div>
+          <div class="text-[#333333] opacity-50 mt-5 font-semibold text-sm">
+            <h1>Availability</h1>
+          </div>
+          <hr class="mt-3">
+          <div class="flex justify-between items-center mt-3">
+            <h1 class="font-normal text-[#333333] opacity-50  text-base ">Selected: 0</h1>
+            <h1 class="font-normal text-[#57b06c]   text-base ">Reset</h1>
+          </div>
+          <div class="mt-5">
+            <div class="flex items-center mb-4">
+              <input id="default-checkbox" type="checkbox" value=""
+                class="w-4 h-4 text-[#57B06C] bg-gray-100 border-gray-300 rounded focus:ring-[#57B06C]">
+              <label for="checked-checkbox" class="ml-2">
+                <span class=" text-base font-medium text-[#333333] opacity-50 dark:text-gray-300">In Stock</span><span
+                  class="text-black ml-1 text-base">(112)</span>
+              </label>
+            </div>
+            <div class="flex items-center">
+              <input id="checked-checkbox" type="checkbox" value=""
+                class="w-4 h-4 text-[#57B06C] bg-gray-100 border-gray-300 rounded focus:ring-[#57B06C]">
+              <label for="checked-checkbox" class="ml-2">
+                <span class=" text-base font-medium text-[#333333] opacity-50 dark:text-gray-300">Out of
+                  Stock </span><span class="text-black ml-1 text-base">(02)</span>
+              </label>
+            </div>
+          </div>
+          <div class="text-[#333333] opacity-50 mt-5 font-semibold text-sm">
+            <h1>Price</h1>
+          </div>
+          <hr class="mt-3">
+          <div class="flex justify-between items-center mt-3">
+            <h1 class="font-normal text-[#333333] opacity-50  text-base ">Selected: 0</h1>
+            <h1 class="font-normal text-[#57b06c]   text-base ">Reset</h1>
+          </div>
+          <div class="text-[#333333] opacity-50 mt-5 font-semibold text-sm">
+            <h1>Categories</h1>
+          </div>
+          <hr class="mt-3">
+          <div class="flex justify-between items-center mt-3">
+            <h1 class="font-normal text-[#333333] opacity-50  text-base ">Selected: <span id="selected-count">0</span>
+            </h1>
+            <h1 class="font-normal text-[#57b06c] text-base " onclick="resetCount()">Reset</h1>
+          </div>
+          <div class="mt-5">
+            <div class="flex items-center mb-4">
+              <input id="checkbox1" type="checkbox" value=""
+                class="checkbox w-4 h-4 text-[#57B06C] bg-gray-100 border-gray-300 rounded focus:ring-[#57B06C]">
+              <label for="checkbox1" class="ml-2">
+                <span class="text-base text-input font-medium text-[#333333] opacity-50 dark:text-gray-300">T-shirts &
+                  Tops</span>
+              </label>
+            </div>
+            <div class="flex items-center mb-4">
+              <input id="checkbox2" type="checkbox" value=""
+                class="checkbox w-4 h-4 text-[#57B06C] bg-gray-100 border-gray-300 rounded focus:ring-[#57B06C]">
+              <label for="checkbox2" class="ml-2">
+                <span class="text-base text-input font-medium text-[#333333] opacity-50 dark:text-gray-300">Jumpsuits
+                </span>
+              </label>
+            </div>
+            <div class="flex items-center mb-4">
+              <input id="checkbox3" type="checkbox" value=""
+                class="checkbox w-4 h-4 text-[#57B06C] bg-gray-100 border-gray-300 rounded focus:ring-[#57B06C]">
+              <label for="checkbox3" class="ml-2">
+                <span class="text-base text-input font-medium text-[#333333] opacity-50 dark:text-gray-300">Evening
+                  Gown</span>
+              </label>
+            </div>
+            <div class="flex items-center mb-4">
+              <input id="checkbox4" type="checkbox" value=""
+                class="checkbox w-4 h-4 text-[#57B06C] bg-gray-100 border-gray-300 rounded focus:ring-[#57B06C]">
+              <label for="checkbox4" class="ml-2">
+                <span class="text-base text-input font-medium text-[#333333] opacity-50 dark:text-gray-300">Party</span>
+              </label>
+            </div>
+            <div class="flex items-center mb-4">
+              <input id="checkbox5" type="checkbox" value=""
+                class="checkbox w-4 h-4 text-[#57B06C] bg-gray-100 border-gray-300 rounded focus:ring-[#57B06C]">
+              <label for="checkbox5" class="ml-2">
+                <span
+                  class="text-base text-input font-medium text-[#333333] opacity-50 dark:text-gray-300">Skirts</span>
+              </label>
+            </div>
+            <div class="flex items-center mb-4">
+              <input id="checkbox6" type="checkbox" value=""
+                class="checkbox w-4 h-4 text-[#57B06C] bg-gray-100 border-gray-300 rounded focus:ring-[#57B06C]">
+              <label for="checkbox6" class="ml-2">
+                <span
+                  class="text-base text-input font-medium text-[#333333] opacity-50 dark:text-gray-300">Summer</span>
+              </label>
+            </div>
+            <div class="mt-10">
+              <h1 class="flex justify-between items-center text-[#333333] opacity-50">Brands <img
+                  src="./assets/images/icons/plus.png" alt=""></h1>
+            </div>
+            <hr class="mt-3">
+            <div class="mt-10">
+              <h1 class="flex justify-between items-center text-[#333333] opacity-50">Brands <img
+                  src="./assets/images/icons/plus.png" alt=""></h1>
+            </div>
+            <hr class="mt-3">
+            <div class="mt-10">
+              <img src="./assets/images/thumbnail/discount.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="flex-auto bg-white p-2 rounded-md">
+          <i class='bx bx-menu-alt-left text-5xl lg:hidden block'></i>
+          <div class="flex justify-between my-5">
+            <div>
+              <img src="./assets/images/icons/settings.png" class="bg-[#F7F7F7] p-2 rounded-md" id="settings-img" alt=""
+                style="display:none">
+            </div>
+            <div class="flex">
+              <div>
+                <img src="./assets/images/icons/Document.png" class="mr-5 bg-[#F7F7F7] p-2 rounded-md" alt="">
+              </div>
+              <div>
+                <img src="./assets/images/icons/Category.png" class="bg-[#7FC28F] p-2 rounded-md" alt="">
+              </div>
+            </div>
+            <div>
+              <select id="countries"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-[#7FC28F] focus:border-[#7FC28F] block w-full px-6 py-2 ">
+                <option selected>Sorted By</option>
+                <option value="US">Daily</option>
+                <option value="CA">Monthly</option>
+              </select>
+            </div>
+          </div>
+          <div class="selected-item-name">
+          </div>
+          <hr>
+          <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1  gap-4 py-4 pt-4 card-grid">
+            <div class="remove-card transition-all duration-500 bg-white shadow-md rounded-md p-4">
+              <div class="relative group flex items-center justify-center">
+                <img src="./assets/images/shop-image/oliver-green-shirt-1.png" class="hover:opacity-80 cursor-pointer"
+                  alt="" onclick="toggleBorder(this)">
+                <img src="./assets/images/icons/heart.png"
+                  class="absolute flex items-center justify-center px-2 py-1 top-0 right-0 my-3 mr-2 rounded-md bg-white font-bold text-sm opacity-0 group-hover:opacity-100 cursor-pointer"
+                  alt="">
+                <button
+                  class="absolute flex items-center justify-center px-3 py-2 md:w-52 lg:w-40 bottom-0 my-3 text-white rounded-md bg-[#57B06C] font-bold text-sm opacity-0 group-hover:opacity-100 add-to-cart-btn">
+                  <img src="./assets/images/icons/Bag.png" class="mr-2 " alt="">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="mt-3">
+                <div class="flex justify-between">
+                  <div>
+                    <h1 class="font-medium text-base text-[#333333] mb-2">Olive Green Shirt</h1>
+                    <div class="flex">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                    </div>
+                  </div>
+                  <div class="flex items-end ">
+                    <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                    <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="remove-card transition-all duration-500 bg-white shadow-md rounded-md p-4">
+              <div class="relative group flex items-center justify-center">
+                <img src="./assets/images/shop-image/oliver-green-shirt-2.png" class="hover:opacity-80 cursor-pointer"
+                  alt="" onclick="toggleBorder(this)">
+                <img src="./assets/images/icons/heart.png"
+                  class="absolute flex items-center justify-center px-3 py-1 top-0 right-0 my-3 mr-2 rounded-md bg-white font-bold text-sm opacity-0 group-hover:opacity-100 cursor-pointer"
+                  alt="">
+                <button
+                  class="absolute flex items-center justify-center px-3 py-2 md:w-52 lg:w-40 bottom-0 my-3 text-white rounded-md bg-[#57B06C] font-bold text-sm opacity-0 group-hover:opacity-100 add-to-cart-btn">
+                  <img src="./assets/images/icons/Bag.png" class="mr-2" alt="">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="mt-3">
+                <div class="flex justify-between">
+                  <div>
+                    <h1 class="font-medium text-base text-[#333333] mb-2">Blue Jeans Jacket</h1>
+                    <div class="flex">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                    </div>
+                  </div>
+                  <div class="flex items-end ">
+                    <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                    <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="remove-card transition-all duration-500 bg-white shadow-md rounded-md p-4">
+              <div class="relative group flex items-center justify-center">
+                <img src="./assets/images/shop-image/oliver-green-shirt-3.png" class="hover:opacity-80 cursor-pointer"
+                  alt="" onclick="toggleBorder(this)">
+                <img src="./assets/images/icons/heart.png"
+                  class="absolute flex items-center justify-center px-3 py-1 top-0 right-0 my-3 mr-2 rounded-md bg-white font-bold text-sm opacity-0 group-hover:opacity-100 cursor-pointer"
+                  alt="">
+                <button
+                  class="absolute flex items-center justify-center px-3 py-2 md:w-52 lg:w-40 bottom-0 my-3 text-white rounded-md bg-[#57B06C] font-bold text-sm opacity-0 group-hover:opacity-100 add-to-cart-btn">
+                  <img src="./assets/images/icons/Bag.png" class="mr-2" alt="">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="mt-3">
+                <div class="flex justify-between">
+                  <div>
+                    <h1 class="font-medium text-base text-[#333333] mb-2">Pink Sweat Shirt</h1>
+                    <div class="flex">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                    </div>
+                  </div>
+                  <div class="flex items-end ">
+                    <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                    <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="remove-card transition-all duration-500 bg-white shadow-md rounded-md p-4">
+              <div class="relative group flex items-center justify-center">
+                <img src="./assets/images/shop-image/oliver-green-shirt-4.png" class="hover:opacity-80 cursor-pointer"
+                  alt="" onclick="toggleBorder(this)">
+                <img src="./assets/images/icons/heart.png"
+                  class="absolute flex items-center justify-center px-3 py-1 top-0 right-0 my-3 mr-2 rounded-md bg-white font-bold text-sm opacity-0 group-hover:opacity-100 cursor-pointer"
+                  alt="">
+                <button
+                  class="absolute flex items-center justify-center px-3 py-2 md:w-52 lg:w-40 bottom-0 my-3 text-white rounded-md bg-[#57B06C] font-bold text-sm opacity-0 group-hover:opacity-100 add-to-cart-btn">
+                  <img src="./assets/images/icons/Bag.png" class="mr-2" alt="">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="mt-3">
+                <div class="flex justify-between">
+                  <div>
+                    <h1 class="font-medium text-base text-[#333333] mb-2">Olive Green Shirt</h1>
+                    <div class="flex">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                    </div>
+                  </div>
+                  <div class="flex items-end ">
+                    <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                    <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="remove-card transition-all duration-500 bg-white shadow-md rounded-md p-4">
+              <div class="relative group flex items-center justify-center">
+                <img src="./assets/images/shop-image/oliver-green-shirt-5.png" class="hover:opacity-80 cursor-pointer"
+                  alt="" onclick="toggleBorder(this)">
+                <img src="./assets/images/icons/heart.png"
+                  class="absolute flex items-center justify-center px-3 py-1 top-0 right-0 my-3 mr-2 rounded-md bg-white font-bold text-sm opacity-0 group-hover:opacity-100 cursor-pointer"
+                  alt="">
+                <button
+                  class="absolute flex items-center justify-center px-3 py-2 md:w-52 lg:w-40 bottom-0 my-3 text-white rounded-md bg-[#57B06C] font-bold text-sm opacity-0 group-hover:opacity-100 add-to-cart-btn">
+                  <img src="./assets/images/icons/Bag.png" class="mr-2" alt="">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="mt-3">
+                <div class="flex justify-between">
+                  <div>
+                    <h1 class="font-medium text-base text-[#333333] mb-2">Olive Green Shirt</h1>
+                    <div class="flex">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                    </div>
+                  </div>
+                  <div class="flex items-end ">
+                    <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                    <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="remove-card transition-all duration-500 bg-white shadow-md rounded-md p-4">
+              <div class="relative group flex items-center justify-center">
+                <img src="./assets/images/shop-image/oliver-green-shirt-6.png" class="hover:opacity-80 cursor-pointer"
+                  alt="" onclick="toggleBorder(this)">
+                <img src="./assets/images/icons/heart.png"
+                  class="absolute flex items-center justify-center px-2 py-1 top-0 right-0 my-3 mr-2 rounded-md bg-white font-bold text-sm opacity-0 group-hover:opacity-100 cursor-pointer"
+                  alt="">
+                <button
+                  class="absolute flex items-center justify-center px-2 py-2 md:w-52 lg:w-40 bottom-0 my-3 text-white rounded-md bg-[#57B06C] font-bold text-sm opacity-0 group-hover:opacity-100 add-to-cart-btn">
+                  <img src="./assets/images/icons/Bag.png" class="mr-2" alt="">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="mt-3">
+                <div class="flex justify-between">
+                  <div>
+                    <h1 class="font-medium text-base text-[#333333] mb-2">Olive Green Shirt</h1>
+                    <div class="flex">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                    </div>
+                  </div>
+                  <div class="flex items-end ">
+                    <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                    <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="remove-card transition-all duration-500 bg-white shadow-md rounded-md p-4">
+              <div class="relative group flex items-center justify-center">
+                <img src="./assets/images/shop-image/oliver-green-shirt-7.png" class="hover:opacity-80 cursor-pointer"
+                  alt="" onclick="toggleBorder(this)">
+                <img src="./assets/images/icons/heart.png"
+                  class="absolute flex items-center justify-center px-2 py-1 top-0 right-0 my-3 mr-2 rounded-md bg-white font-bold text-sm opacity-0 group-hover:opacity-100 cursor-pointer"
+                  alt="">
+                <button
+                  class="absolute flex items-center justify-center px-2 py-2 md:w-52 lg:w-40 bottom-0 my-3 text-white rounded-md bg-[#57B06C] font-bold text-sm opacity-0 group-hover:opacity-100 add-to-cart-btn">
+                  <img src="./assets/images/icons/Bag.png" class="mr-2" alt="">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="mt-3">
+                <div class="flex justify-between">
+                  <div>
+                    <h1 class="font-medium text-base text-[#333333] mb-2">Olive Green Shirt</h1>
+                    <div class="flex">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                    </div>
+                  </div>
+                  <div class="flex items-end ">
+                    <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                    <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="remove-card transition-all duration-500 bg-white shadow-md rounded-md p-4">
+              <div class="relative group flex items-center justify-center">
+                <img src="./assets/images/shop-image/oliver-green-shirt-8.png" class="hover:opacity-80 cursor-pointer"
+                  alt="" onclick="toggleBorder(this)">
+                <img src="./assets/images/icons/heart.png"
+                  class="absolute flex items-center justify-center px-2 py-1 top-0 right-0 my-3 mr-2 rounded-md bg-white font-bold text-sm opacity-0 group-hover:opacity-100 cursor-pointer"
+                  alt="">
+                <button
+                  class="absolute flex items-center justify-center px-2 py-2 md:w-52 lg:w-40 bottom-0 my-3 text-white rounded-md bg-[#57B06C] font-bold text-sm opacity-0 group-hover:opacity-100 add-to-cart-btn">
+                  <img src="./assets/images/icons/Bag.png" class="mr-2" alt="">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="mt-3">
+                <div class="flex justify-between">
+                  <div>
+                    <h1 class="font-medium text-base text-[#333333] mb-2">Olive Green Shirt</h1>
+                    <div class="flex">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                    </div>
+                  </div>
+                  <div class="flex items-end ">
+                    <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                    <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="remove-card transition-all duration-500 bg-white shadow-md rounded-md p-4">
+              <div class="relative group flex items-center justify-center">
+                <img src="./assets/images/shop-image/oliver-green-shirt-9.png" class="hover:opacity-80 cursor-pointer"
+                  alt="" onclick="toggleBorder(this)">
+                <img src="./assets/images/icons/heart.png"
+                  class="absolute flex items-center justify-center px-2 py-1 top-0 right-0 my-3 mr-2 rounded-md bg-white font-bold text-sm opacity-0 group-hover:opacity-100 cursor-pointer"
+                  alt="">
+                <button
+                  class="absolute flex items-center justify-center px-2 py-2 md:w-52 lg:w-40 bottom-0 my-3 text-white rounded-md bg-[#57B06C] font-bold text-sm opacity-0 group-hover:opacity-100 add-to-cart-btn">
+                  <img src="./assets/images/icons/Bag.png" class="mr-2" alt="">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="mt-3">
+                <div class="flex justify-between">
+                  <div>
+                    <h1 class="font-medium text-base text-[#333333] mb-2">Olive Green Shirt</h1>
+                    <div class="flex">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                    </div>
+                  </div>
+                  <div class="flex items-end ">
+                    <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                    <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="remove-card transition-all duration-500 bg-white shadow-md rounded-md p-4">
+              <div class="relative group flex items-center justify-center">
+                <img src="./assets/images/shop-image/oliver-green-shirt-7.png" class="hover:opacity-80 cursor-pointer"
+                  alt="" onclick="toggleBorder(this)">
+                <img src="./assets/images/icons/heart.png"
+                  class="absolute flex items-center justify-center px-2 py-1 top-0 right-0 my-3 mr-2 rounded-md bg-white font-bold text-sm opacity-0 group-hover:opacity-100 cursor-pointer"
+                  alt="">
+                <button
+                  class="absolute flex items-center justify-center px-2 py-2 md:w-52 lg:w-40 bottom-0 my-3 text-white rounded-md bg-[#57B06C] font-bold text-sm opacity-0 group-hover:opacity-100 add-to-cart-btn">
+                  <img src="./assets/images/icons/Bag.png" class="mr-2" alt="">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="mt-3">
+                <div class="flex justify-between">
+                  <div>
+                    <h1 class="font-medium text-base text-[#333333] mb-2">Olive Green Shirt</h1>
+                    <div class="flex">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                    </div>
+                  </div>
+                  <div class="flex items-end ">
+                    <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                    <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="remove-card transition-all duration-500 bg-white shadow-md rounded-md p-4">
+              <div class="relative group flex items-center justify-center">
+                <img src="./assets/images/shop-image/oliver-green-shirt-7.png" class="hover:opacity-80 cursor-pointer"
+                  alt="" onclick="toggleBorder(this)">
+                <img src="./assets/images/icons/heart.png"
+                  class="absolute flex items-center justify-center px-2 py-1 top-0 right-0 my-3 mr-2 rounded-md bg-white font-bold text-sm opacity-0 group-hover:opacity-100 cursor-pointer"
+                  alt="">
+                <button
+                  class="absolute flex items-center justify-center px-2 py-2 md:w-52 lg:w-40 bottom-0 my-3 text-white rounded-md bg-[#57B06C] font-bold text-sm opacity-0 group-hover:opacity-100 add-to-cart-btn">
+                  <img src="./assets/images/icons/Bag.png" class="mr-2" alt="">
+                  Add to Cart
+                </button>
+              </div>
+              <div class="mt-3">
+                <div class="flex justify-between">
+                  <div>
+                    <h1 class="font-medium text-base text-[#333333] mb-2">Olive Green Shirt</h1>
+                    <div class="flex">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                    </div>
+                  </div>
+                  <div class="flex items-end ">
+                    <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                    <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="remove-card transition-all duration-500 bg-white shadow-md rounded-md p-4">
+              <div>
+                <div class="relative group flex items-center justify-center">
+                  <img src="./assets/images/shop-image/oliver-green-shirt-7.png" class="hover:opacity-80 cursor-pointer"
+                    alt="" onclick="toggleBorder(this)">
+                  <img src="./assets/images/icons/heart.png"
+                    class="absolute flex items-center justify-center px-2 py-1 top-0 right-0 my-3 mr-2 rounded-md bg-white font-bold text-sm opacity-0 group-hover:opacity-100 cursor-pointer"
+                    alt="">
+                  <button
+                    class="absolute flex items-center justify-center px-2 py-2 md:w-52 lg:w-40 bottom-0 my-3 text-white rounded-md bg-[#57B06C] font-bold text-sm opacity-0 group-hover:opacity-100 add-to-cart-btn">
+                    <img src="./assets/images/icons/Bag.png" class="mr-2" alt="">
+                    Add to Cart
+                  </button>
+                </div>
+                <div class="mt-3">
+                  <div class="flex justify-between">
+                    <div>
+                      <h1 class="font-medium text-base text-[#333333] mb-2">Olive Green Shirt</h1>
+                      <div class="flex">
+                        <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                        <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                        <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                        <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                        <img src="./assets/images/icons/Star.png" class="mr-1" alt="">
+                      </div>
+                    </div>
+                    <div class="flex items-end ">
+                      <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                      <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- MAIN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+  <script src="script.js"></script>
+  <script src="./assets/js/shop.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./assets/css/product-details.css ">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/multple-swipper.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <title>AdminSite</title>
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <section id="sidebar">
+    <a href="#" class="brand"><i class='bx bxs-smile icon'></i>
+      <h1>Easital</h1>
+    </a>
+    <ul class="side-menu">
+      <li>
+        <a href="#"><i class='bx bxs-inbox icon'></i> Dashboard <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">eCommerce</a></li>
+        </ul>
+      </li>
+      <li class="divider" data-text="main">Main</li>
+      <li>
+        <a href="#"><i class='bx bxs-inbox icon'></i> eCommerce <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="shop-details.html">Details</a></li>
+          <li><a href="wishlist.html">Wishlist</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class='bx bxs-chart icon'></i> Charts</a></li>
+      <li><a href="#"><i class='bx bxs-widget icon'></i> Widgets</a></li>
+      <li class="divider" data-text="table and forms">Table and forms</li>
+      <li><a href="#"><i class='bx bx-table icon'></i> Tables</a></li>
+      <li>
+        <a href="#"><i class='bx bxs-notepad icon'></i> Forms <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Basic</a></li>
+          <li><a href="#">Select</a></li>
+          <li><a href="#">Checkbox</a></li>
+          <li><a href="#">Radio</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <!-- NAVBAR -->
+  <nav class="content">
+    <i class='bx bx-menu toggle-sidebar'></i>
+    <form action="#">
+      <div class="form-group">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search icon'></i>
+      </div>
+    </form>
+    <a href="#" class="nav-link">
+      <i class='bx bxs-bell icon'></i>
+      <span class="badge">5</span>
+    </a>
+    <a href="#" class="nav-link">
+      <i class='bx bxs-message-square-dots icon'></i>
+      <span class="badge">8</span>
+    </a>
+    <span class="divider"></span>
+    <div class="profile">
+      <img
+        src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        alt="">
+      <ul class="profile-link">
+        <li><a href="#"><i class='bx bxs-user-circle icon'></i> Profile</a></li>
+        <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+        <li><a href="#"><i class='bx bxs-log-out-circle'></i> Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- NAVBAR -->
+
+  <!-- MAIN -->
+  <main class="content">
+    <!-- Welcome Section Start-->
+    <section>
+      <div class="border-[1px] bg-[#F7F7F7] border-opacity-50 p-3 mb-5 rounded-md">
+        <div class="rounded-md">
+          <h1 class="text-base"><span class="text-[#333333] opacity-50">Home ></span><span
+              class="text-[#333333] opacity-50"> E-commerce ></span> <span class="text-[#333333] ">Product
+              Details</span>
+          </h1>
+        </div>
+      </div>
+      <div class="shadow-md bg-white rounded-md p-5">
+        <div class="grid md:grid-cols-2 grid-cols-1 mb-5">
+          <div class="flex md:mb-0 mb-10">
+            <div>
+              <img src="./assets/images/dress/funky-shirt-cover.png" alt="" id="imageCoverbox">
+            </div>
+            <div class="mx-3">
+              <img src="./assets/images/dress/funky-shirt-cover.png"
+                class="mb-3 w-24 h-24 rounded-md cursor-pointer clicked-img" alt="" onclick="clickImage(this)">
+              <img src="./assets/images/dress/funky-shirt-cover-2.png" class="mb-3 w-24 h-24 cursor-pointer rounded-md"
+                alt="" onclick="clickImage(this)">
+              <img src="./assets/images/dress/funky-shirt-cover-3.png" class="mb-3 w-24 h-24 cursor-pointer rounded-md"
+                alt="" onclick="clickImage(this)">
+              <img src="./assets/images/dress/funky-shirt-cover-4.png" class="mb-3 w-24 h-24 cursor-pointer rounded-md"
+                alt="" onclick="clickImage(this)">
+              <img src="./assets/images/dress/funky-shirt-cover-5.png" class="mb-3 w-24 h-24 cursor-pointer rounded-md"
+                alt="" onclick="clickImage(this)">
+            </div>
+          </div>
+          <div>
+            <h1 class="font-medium text-base text-[#333333]">Funky Shirt</h1>
+            <div class="flex ">
+              <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+              <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+            </div>
+            <div class="flex items-center mt-2">
+              <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <title>First star</title>
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <title>Second star</title>
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <title>Third star</title>
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg aria-hidden="true" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg">
+                <title>Fourth star</title>
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <svg aria-hidden="true" class="w-5 h-5 text-gray-300 dark:text-gray-500" fill="currentColor"
+                viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <title>Fifth star</title>
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                </path>
+              </svg>
+              <p class="ml-2 text-sm font-medium text-gray-500 dark:text-gray-400">(15)</p>
+            </div>
+            <div class="text-[#333333] opacity-50 mt-10 text-base">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias nostrum asperiores maxime laudantium
+              quod similique dignissimos veniam dicta inventore quisquam!
+            </div>
+            <div class="mt-10  flex items-center">
+              <div>
+                <h1 class="text-[#333333] opacity-50">Vendor:</h1>
+                <h1 class="text-[#333333] opacity-50">SKU:</h1>
+                <h1 class="text-[#333333] opacity-50">Availability:</h1>
+                <h1 class="text-[#333333] opacity-50">Tags:</h1>
+                <h1 class="text-[#333333] opacity-50">Category:</h1>
+                <h1 class="text-[#333333] opacity-50">Product Type:</h1>
+              </div>
+              <div class="ml-5">
+                <h1 class="text-[#333333]">Samara</h1>
+                <h1 class="text-[#333333]">345ERJA</h1>
+                <h1 class="text-[#333333]">50 in Stock</h1>
+                <h1 class="text-[#333333]">Women</h1>
+                <h1 class="text-[#333333] items-start">Shirt</h1>
+                <h1 class="text-[#333333]">eco-friendly, green, linen, hemp, bamboo</h1>
+              </div>
+            </div>
+            <div class="mt-10 flex items-center justify-between flex-wrap gap-2">
+              <div>
+                <h1 class=""><span class="text-[#333333] opacity-50">Size: </span><span
+                    class="text-[#333333]">small</span></h1>
+                <div class="text-sm text-white mt-2 ">
+                  <button class="bg-[#7FC28F] px-2 py-1 rounded-md w-10 h-10">S</button>
+                  <button class="bg-[#7FC28F] px-2 py-1 rounded-md w-10 h-10">M</button>
+                  <button class="bg-[#7FC28F] px-2 py-1 rounded-md w-10 h-10">L</button>
+                  <button class="bg-[#7FC28F] px-2 py-1 rounded-md w-10 h-10">Xl</button>
+                  <button class="bg-[#7FC28F] px-2 py-1 rounded-md w-10 h-10">XXl</button>
+                </div>
+              </div>
+              <div>
+                <h1 class=""><span class="text-[#333333] opacity-50">Color: </span><span class="text-[#333333]">Olive
+                    Green</span></h1>
+                <div class="text-sm text-white mt-2 flex ">
+                  <div class="bg-[#746F8C] w-10 h-10 rounded-md mr-2"></div>
+                  <div class="bg-[#808C61] w-10 h-10 rounded-md mr-2"></div>
+                  <div class="bg-[#A3A268] w-10 h-10 rounded-md mr-2"></div>
+                  <div class="bg-[#7EA368;] w-10 h-10 rounded-md mr-2"></div>
+                </div>
+              </div>
+            </div>
+            <div class="flex items-center mt-20">
+              <div class="flex items-center mr-2 border-[1px] border-gray-200 py-[0.8px] rounded-md">
+                <div>
+                  <h1 class="bg-[#F7F7F7] rounded-md p-2">+</h1>
+                </div>
+                <div>
+                  <h1 class="rounded-md  p-2">12</h1>
+                </div>
+                <div>
+                  <h1 class="bg-[#F7F7F7] rounded-md  p-2">-</h1>
+                </div>
+              </div>
+              <div>
+                <button
+                  class="bg-[#57B06C]  p-2 text-white rounded-md font-medium text-xl flex items-center justify-center"><img
+                    src="./assets/images/icons/Bag.png" class="mr-2" alt="">
+                  <span>Add To Cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid 2xl:grid-cols-5 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4 ">
+          <div class="text-center bg-[#F7F7F7] mb-5 rounded-md ">
+            <img src="./assets/images/icons/delivery.png" class="mx-auto" alt="">
+            <h1 class="text-base font-bold text-[#333333] mb-2">Free Shipping</h1>
+          </div>
+          <div class="p-4 text-center bg-[#F7F7F7] mb-5 rounded-md ">
+            <img src="./assets/images/icons/mony.png" class="mx-auto" alt="">
+            <h1 class="text-base font-bold text-[#333333] mb-2">EMI Options Available</h1>
+          </div>
+          <div class="p-4 text-center bg-[#F7F7F7] mb-5 rounded-md ">
+            <img src="./assets/images/icons/orginal.png" class="mx-auto" alt="">
+            <h1 class="text-base font-bold text-[#333333] mb-2">100% Original Products</h1>
+          </div>
+          <div class="p-4 text-center bg-[#F7F7F7] mb-5 rounded-md ">
+            <img src="./assets/images/icons/orginal.png" class="mx-auto" alt="">
+            <h1 class="text-base font-bold text-[#333333] mb-2">10 Days Replacement Option</h1>
+          </div>
+          <div class="p-4 text-center bg-[#F7F7F7] mb-5 rounded-md">
+            <img src="./assets/images/icons/quality-1.png" class="mx-auto" alt="">
+            <h1 class="text-base font-bold text-[#333333] mb-2">1 Year Warranty</h1>
+          </div>
+        </div>
+        <h1 class=" text-[#0B75B1] font-medium text-xl text-center mb-5 mt-10">Related Products</h1>
+        <div class="grid grid-cols-1 gap-5 mt-5">
+          <div class="rounded-lg p-5">
+            <div class="swiper mySwiperRelatedProduct">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="remove-card transition-all duration-500">
+                    <div class="relative group flex items-center justify-center">
+                      <img src="./assets/images/dress/olive-green-shirt-6.png" alt="">
+                    </div>
+                    <div class=" mt-3">
+                      <h1 class="font-medium text-base text-[#333333]">Olive Green Shirt</h1>
+                      <div class="flex ">
+                        <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                        <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="remove-card transition-all duration-500">
+                    <div class="relative group flex items-center justify-center">
+                      <img src="./assets/images/dress/olive-green-shirt-8.png" alt="">
+                    </div>
+                    <div class="mt-3">
+                      <h1 class="font-medium text-base text-[#333333]">Olive Green Shirt</h1>
+                      <div class="flex ">
+                        <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                        <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="remove-card transition-all duration-500">
+                    <div class="relative group flex items-center justify-center">
+                      <img src="./assets/images/dress/olive-green-shirt-9.png" alt="">
+                    </div>
+                    <div class=" mt-3">
+                      <h1 class="font-medium text-base text-[#333333]">Olive Green Shirt</h1>
+                      <div class="flex ">
+                        <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                        <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="remove-card transition-all duration-500">
+                    <div class="relative group flex items-center justify-center">
+                      <img src="./assets/images/dress/olive-green-shirt-7.png" alt="">
+                    </div>
+                    <div class=" mt-3">
+                      <h1 class="font-medium text-base text-[#333333]">Olive Green Shirt</h1>
+                      <div class="flex ">
+                        <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                        <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="remove-card transition-all duration-500">
+                    <div class="relative group flex items-center justify-center">
+                      <img src="./assets/images/dress/olive-green-shirt-7.png" alt="">
+                    </div>
+                    <div class=" mt-3">
+                      <h1 class="font-medium text-base text-[#333333]">Olive Green Shirt</h1>
+                      <div class="flex ">
+                        <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                        <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="remove-card transition-all duration-500">
+                    <div class="relative group flex items-center justify-center">
+                      <img src="./assets/images/dress/olive-green-shirt-7.png" alt="">
+                    </div>
+                    <div class=" mt-3">
+                      <h1 class="font-medium text-base text-[#333333]">Olive Green Shirt</h1>
+                      <div class="flex ">
+                        <h1 class="text-[#333333] text-base opacity-50 line-through mr-2">$100.00</h1>
+                        <h1 class="text-[#0b75b1] opacity-70 text-base">$20.75</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+        <div class="text-xs text-white text-center mt-10">
+          <button class="bg-[#7FC28F] px-2 py-2 rounded-md text-base w-8 h-9">1</button>
+          <button class="bg-[#7FC28F] px-2 py-2 rounded-md text-base w-8 h-9">2</button>
+          <button class="bg-[#7FC28F] px-2 py-2 rounded-md text-base w-8 h-9">3</button>
+          <button class="bg-[#7FC28F] px-2 py-2 rounded-md text-base w-8 h-9">4</button>
+          <button class="bg-[#7FC28F] px-2 py-2 rounded-md text-base w-8 h-9">5</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- MAIN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./assets/js/swipper.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+  <script src="script.js"></script>
+  <script src="./assets/js/product-details.js"></script>
+</body>
+
+
+
+</html>
