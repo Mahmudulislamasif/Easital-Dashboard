@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+  <title>AdminSite</title>
+</head>
+
+<body>
+  <!-- SIDEBAR -->
+  <section id="sidebar">
+    <a href="#" class="brand"><i class='bx bxs-smile icon'></i>
+      <h1>Easital</h1>
+    </a>
+    <ul class="side-menu">
+      <li>
+        <a href="#"><i class='bx bxs-inbox icon'></i> Dashboard <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Analytics</a></li>
+          <li><a href="#">eCommerce</a></li>
+        </ul>
+      </li>
+      <li class="divider" data-text="main">Main</li>
+      <li>
+        <a href="#"><i class='bx bxs-inbox icon'></i> eCommerce <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="shop-details.html">Details</a></li>
+          <li><a href="wishlist.html">Wishlist</a></li>
+          <li><a href="product-checkout.html">Checkout</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#"><i class='bx bxs-inbox icon'></i> Components <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="accordion.html">Accordion</a></li>
+          <li><a href="alert.html">Alert</a></li>
+          <li><a href="wishlist.html">Avatar</a></li>
+          <li><a href="product-checkout.html">Badges</a></li>
+          <li><a href="product-checkout.html">Breadscrump</a></li>
+          <li><a href="product-checkout.html">Button</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><i class='bx bxs-chart icon'></i> Charts</a></li>
+      <li><a href="#"><i class='bx bxs-widget icon'></i> Widgets</a></li>
+      <li class="divider" data-text="table and forms">Table and forms</li>
+      <li><a href="#"><i class='bx bx-table icon'></i> Tables</a></li>
+      <li>
+        <a href="#"><i class='bx bxs-notepad icon'></i> Forms <i class='bx bx-chevron-right icon-right'></i></a>
+        <ul class="side-dropdown">
+          <li><a href="#">Basic</a></li>
+          <li><a href="#">Select</a></li>
+          <li><a href="#">Checkbox</a></li>
+          <li><a href="#">Radio</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+  <!-- NAVBAR -->
+  <nav class="content">
+    <i class='bx bx-menu toggle-sidebar'></i>
+    <form action="#">
+      <div class="form-group">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search icon'></i>
+      </div>
+    </form>
+    <a href="#" class="nav-link">
+      <i class='bx bxs-bell icon'></i>
+      <span class="badge">5</span>
+    </a>
+    <a href="#" class="nav-link">
+      <i class='bx bxs-message-square-dots icon'></i>
+      <span class="badge">8</span>
+    </a>
+    <span class="divider"></span>
+    <div class="profile">
+      <img
+        src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+        alt="">
+      <ul class="profile-link">
+        <li><a href="#"><i class='bx bxs-user-circle icon'></i> Profile</a></li>
+        <li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+        <li><a href="#"><i class='bx bxs-log-out-circle'></i> Logout</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- NAVBAR -->
+
+  <!-- MAIN -->
+  <main class="content">
+    <section>
+      <div class="p-5">
+        <div class="border-[1px] bg-[#F7F7F7] border-opacity-50 p-3 mb-5 rounded-md">
+          <div class="rounded-md">
+            <h1 class="text-base"><span class="text-[#333333] opacity-50">Home ></span><span
+                class="text-[#333333] opacity-50"> Components ></span> <span class="text-[#333333] ">Accordion</span>
+            </h1>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Single Accordion</h1>
+            <div class="flex justify-between accordion-header cursor-pointer">
+              <h1 class="font-normal text-xl text-[#333333]">Accordion Title</h1>
+              <div>
+                <img class="accordion-arrow transform transition-transform duration-300"
+                  src="./assets/images/icons/down-arrow.png" alt="">
+              </div>
+            </div>
+            <div class="accordion-content hidden">
+              <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Content </h1>
+            </div>
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Stack Accordion</h1>
+            <div class="flex justify-between accordion-header cursor-pointer">
+              <h1 class="font-normal text-xl text-[#333333]">Accordion Title 1</h1>
+              <div>
+                <img class="accordion-arrow transform transition-transform duration-300"
+                  src="./assets/images/icons/down-arrow.png" alt="">
+              </div>
+            </div>
+            <div class="accordion-content hidden">
+              <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Content 1</h1>
+            </div>
+            <hr class="text-[#333333] my-5">
+            <div class="flex justify-between accordion-header cursor-pointer">
+              <h1 class="font-normal text-xl text-[#333333]">Accordion Title 2</h1>
+              <div>
+                <img class="accordion-arrow transform transition-transform duration-300"
+                  src="./assets/images/icons/down-arrow.png" alt="">
+              </div>
+            </div>
+            <div class="accordion-content hidden">
+              <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Content 2</h1>
+            </div>
+            <hr class="text-[#333333] my-5">
+            <div class="flex justify-between accordion-header cursor-pointer">
+              <h1 class="font-normal text-xl text-[#333333]">Accordion Title 3</h1>
+              <div>
+                <img class="accordion-arrow transform transition-transform duration-300"
+                  src="./assets/images/icons/down-arrow.png" alt="">
+              </div>
+            </div>
+            <div class="accordion-content hidden">
+              <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Content 3</h1>
+            </div>
+            <hr class="text-[#333333] my-5">
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5 row-span-2">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Stack Accordion</h1>
+            <div class="flex justify-between accordion-header cursor-pointer">
+              <h1 class="font-normal text-xl text-[#333333]">Parent 1</h1>
+              <div>
+                <img class="accordion-arrow transform transition-transform duration-300"
+                  src="./assets/images/icons/down-arrow.png" alt="">
+              </div>
+            </div>
+            <div class="accordion-content hidden">
+              <div class="flex justify-between accordion-child cursor-pointer">
+                <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2 ml-5">Child 1</h1>
+                <div>
+                  <img class="accordion-arrow transform transition-transform duration-300"
+                    src="./assets/images/icons/down-arrow.png" alt="">
+                </div>
+              </div>
+              <div class="accordion-content-two hidden">
+                <h1 class="ml-10 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempora,
+                  atque
+                  blanditiis tempore hic
+                  id. Quibusdam quasi minus quos aut rerum quo odit ullam obcaecati, suscipit, cum possimus nostrum
+                  error et aliquam tempore inventore. Ipsa magnam necessitatibus sint odio tempora!</h1>
+              </div>
+              <div class="flex justify-between accordion-child cursor-pointer">
+                <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2 ml-5">Child 2</h1>
+                <div>
+                  <img class="accordion-arrow transform transition-transform duration-300"
+                    src="./assets/images/icons/down-arrow.png" alt="">
+                </div>
+              </div>
+              <div class="accordion-content-two hidden">
+                <h1 class="ml-10 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempora,
+                  atque
+                  blanditiis tempore hic
+                  id. Quibusdam quasi minus quos aut rerum quo odit ullam obcaecati, suscipit, cum possimus nostrum
+                  error et aliquam tempore inventore. Ipsa magnam necessitatibus sint odio tempora!</h1>
+              </div>
+              <div class="flex justify-between accordion-child cursor-pointer">
+                <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2 ml-5">Child 3</h1>
+                <div>
+                  <img class="accordion-arrow transform transition-transform duration-300"
+                    src="./assets/images/icons/down-arrow.png" alt="">
+                </div>
+              </div>
+              <div class="accordion-content-two hidden">
+                <h1 class="ml-10 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit tempora,
+                  atque
+                  blanditiis tempore hic
+                  id. Quibusdam quasi minus quos aut rerum quo odit ullam obcaecati, suscipit, cum possimus nostrum
+                  error et aliquam tempore inventore. Ipsa magnam necessitatibus sint odio tempora!</h1>
+              </div>
+            </div>
+            <hr class="text-[#333333] my-5">
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Table Accordion</h1>
+            <div class="border-[1px] border-[#333333] p-2 border-opacity-25">
+              <div class="flex justify-between accordion-header cursor-pointer ">
+                <h1 class="font-normal text-xl text-[#333333]">Accordion Title 1</h1>
+                <div>
+                  <img class="accordion-arrow transform transition-transform duration-300"
+                    src="./assets/images/icons/down-arrow.png" alt="">
+                </div>
+              </div>
+              <div class="accordion-content hidden">
+                <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Content 1</h1>
+              </div>
+            </div>
+            <div class="border-[1px] border-[#333333] p-2 border-opacity-25">
+              <div class="flex justify-between accordion-header cursor-pointer">
+                <h1 class="font-normal text-xl text-[#333333]">Accordion Title 2</h1>
+                <div>
+                  <img class="accordion-arrow transform transition-transform duration-300"
+                    src="./assets/images/icons/down-arrow.png" alt="">
+                </div>
+              </div>
+              <div class="accordion-content hidden">
+                <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Content 2</h1>
+              </div>
+            </div>
+            <div class="border-[1px] border-[#333333] p-2 border-opacity-25">
+              <div class="flex justify-between accordion-header cursor-pointer">
+                <h1 class="font-normal text-xl text-[#333333]">Accordion Title 3</h1>
+                <div>
+                  <img class="accordion-arrow transform transition-transform duration-300"
+                    src="./assets/images/icons/down-arrow.png" alt="">
+                </div>
+              </div>
+              <div class="accordion-content hidden">
+                <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Code 3</h1>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Filter Accordion</h1>
+            <div>
+              <div class="flex justify-between accordion-header-two cursor-pointer items-center">
+                <h1 class="font-normal text-xl text-[#333333]">Accordion Title 1</h1>
+                <div>
+                  <img class="accordion-arrow transform transition-transform duration-300"
+                    src="./assets/images/icons/plus.png" alt="">
+                </div>
+              </div>
+              <div class="accordion-content-two hidden">
+                <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Content 1</h1>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between accordion-header-two cursor-pointer items-center">
+                <h1 class="font-normal text-xl text-[#333333]">Accordion Title 2</h1>
+                <div>
+                  <img class=" transform transition-transform duration-300" src="./assets/images/icons/plus.png" alt="">
+                </div>
+              </div>
+              <div class="accordion-content-two hidden">
+                <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Content 2</h1>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between accordion-header-two cursor-pointer items-center">
+                <h1 class="font-normal text-xl text-[#333333]">Accordion Title 3</h1>
+                <div>
+                  <img class=" transform transition-transform duration-300" src="./assets/images/icons/plus.png" alt="">
+                </div>
+              </div>
+              <div class="accordion-content-two hidden">
+                <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Content 3</h1>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Single Active Accordion</h1>
+            <div>
+              <div class="flex justify-between accordion-header cursor-pointer ">
+                <h1 class="font-normal text-xl text-[#333333]">Accordion Title 1</h1>
+                <div>
+                  <img class="accordion-arrow transform transition-transform duration-300"
+                    src="./assets/images/icons/down-arrow.png" alt="">
+                </div>
+              </div>
+              <div class="accordion-content">
+                <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Content 1</h1>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between accordion-header cursor-pointer">
+                <h1 class="font-normal text-xl text-[#333333]">Accordion Title 2</h1>
+                <div>
+                  <img class="accordion-arrow transform transition-transform duration-300"
+                    src="./assets/images/icons/down-arrow.png" alt="">
+                </div>
+              </div>
+              <div class="accordion-content hidden">
+                <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Content 2</h1>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between accordion-header cursor-pointer">
+                <h1 class="font-normal text-xl text-[#333333]">Accordion Title 3</h1>
+                <div>
+                  <img class="accordion-arrow transform transition-transform duration-300"
+                    src="./assets/images/icons/down-arrow.png" alt="">
+                </div>
+              </div>
+              <div class="accordion-content hidden">
+                <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Content 3</h1>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Multi Active Accordion</h1>
+            <div>
+              <div class="flex justify-between accordion-header cursor-pointer ">
+                <h1 class="font-normal text-xl text-[#333333]">Accordion Title 1</h1>
+                <div>
+                  <img class="accordion-arrow transform transition-transform duration-300"
+                    src="./assets/images/icons/down-arrow.png" alt="">
+                </div>
+              </div>
+              <div class="accordion-content">
+                <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Content 1</h1>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between accordion-header cursor-pointer">
+                <h1 class="font-normal text-xl text-[#333333]">Accordion Title 2</h1>
+                <div>
+                  <img class="accordion-arrow transform transition-transform duration-300"
+                    src="./assets/images/icons/down-arrow.png" alt="">
+                </div>
+              </div>
+              <div class="accordion-content">
+                <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Content 2</h1>
+              </div>
+            </div>
+            <div>
+              <div class="flex justify-between accordion-header cursor-pointer">
+                <h1 class="font-normal text-xl text-[#333333]">Accordion Title 3</h1>
+                <div>
+                  <img class="accordion-arrow transform transition-transform duration-300"
+                    src="./assets/images/icons/down-arrow.png" alt="">
+                </div>
+              </div>
+              <div class="accordion-content">
+                <h1 class="font-normal text-[#333333] opacity-50 text-base mt-2">Accordion Content 3</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- MAIN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+  <script src="./assets/js/accordion.js"></script>
+  <script src="script.js"></script>
+</body>
+
+
+
+</html>
