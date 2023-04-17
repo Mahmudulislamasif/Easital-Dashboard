@@ -14,7 +14,6 @@
 <body>
 	<!-- SIDEBAR -->
 	<section id="sidebar">
-
 		<a href="#" class="brand"><i class='bx bxs-smile icon'></i>
 			<h1>Easital</h1>
 		</a>
@@ -22,8 +21,24 @@
 			<li>
 				<a href="#"><i class='bx bxs-inbox icon'></i> Dashboard <i class='bx bx-chevron-right icon-right'></i></a>
 				<ul class="side-dropdown">
-					<li><a href="index.html">Analytics</a></li>
-					<li><a href="#">eCommerce</a></li>
+					<li><a href="index.html"><i class='bx bxs-music dropdown-icon'></i><span>Analytics</span></i></a></li>
+          <li><a href="ecommerce.html"><i class='bx bxs-music dropdown-icon'></i><span>eCommerce</span></i></a></li>
+					<li>
+						<a href="#">Submenu <i class='bx bx-chevron-right icon-right'></i></a>
+						<ul class="side-dropdown-two">
+						  <li><a href="#">Submenu item 1</a></li>
+						  <li><a href="#">Submenu item 2</a></li>
+						  <li><a href="#">Submenu item 3</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Submenu <i class='bx bx-chevron-right icon-right'></i></a>
+						<ul class="side-dropdown-two">
+						  <li><a href="#">Submenu item 1</a></li>
+						  <li><a href="#">Submenu item 2</a></li>
+						  <li><a href="#">Submenu item 3</a></li>
+						</ul>
+					</li>
 				</ul>
 			</li>
 			<li class="divider" data-text="main">Main</li>
@@ -95,710 +110,808 @@
 
 	<!-- MAIN -->
 	<main class="content">
-		<!-- Welcome Section Start-->
-		<section>
-			<div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
-				<div class="col-span-2">
-					<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-5 rounded-md gap-5">
-						<div class="bg-[#008891] opacity-60 rounded-md">
-							<div class="p-5">
-								<h1 class="text-white text-sm font-semibold mb-2">TOTAL REVENUE</h1>
-								<div class="flex justify-between items-center flex-wrap">
-									<div>
-										<h1 class="text-3xl text-white font-semibold">$3450.75</h1>
-									</div>
-									<div class="flex items-center p-1">
-										<h1 class="text-[#86F090] text-base mr-2">20.11%</h1>
-										<img src="./assets/images/icons/arrow-down-2.png" alt="">
-									</div>
-								</div>
-							</div>
-							<img src="./assets/images/chart-image/wave.png" class="mt-5" alt="">
-						</div>
-						<div class="bg-[#614E85] opacity-60 rounded-md">
-							<div class="p-5">
-								<h1 class="text-white text-sm font-semibold mb-2">TOTAL CUSTOMER ACQUISITION COST</h1>
-								<div class="flex items-center justify-between p-1 flex-wrap">
-									<div>
-										<h1 class="text-3xl text-white font-semibold">$123,450.00</h1>
-									</div>
-									<div class="flex items-center p-1">
-										<h1 class="text-[#FF9494] text-base mr-2">20.11%</h1>
-										<img src="./assets/images/icons/arrow-down-2.png" alt="">
-									</div>
-								</div>
-							</div>
-							<img src="./assets/images/chart-image/wave.png" class="mt-5" alt="">
-						</div>
-						<div class="bg-[#0B75B1] opacity-60 rounded-md">
-							<div class="p-5">
-								<h1 class="text-white text-sm font-semibold mb-2">TOTAL CONVERSION RATE</h1>
-								<h1 class="text-3xl text-white font-semibold">42.15%</h1>
-							</div>
-							<img src="./assets/images/chart-image/wave.png" class="mt-5" alt="">
-						</div>
-					</div>
-					<div class="rounded-md shadow-md bg-white h-[580px]">
-						<div class="flex justify-between items-center pt-5 pr-5">
-							<h1 class=" text-[#0B75B1] font-medium text-xl pl-5 ">Sell Overview</h1>
-							<div>
-								<button class="bg-[#57B06C] text-white p-2 rounded-md font-medium text-sm">Earnings</button>
-								<button class="bg-[#F7F7F7] text-[#333333] p-2 rounded-md font-medium text-sm">Spendings</button>
-							</div>
-						</div>
-						<div id="wave-chart-demo"></div>
-					</div>
-				</div>
-				<div class="lg:col-span-1 col-span-2">
-					<div class=" bg-white mb-5 rounded-md h-[270px]">
-						<div class="text-center p-5">
-							<img src="./assets/images/icons/badge.png" class="mx-auto" alt="">
-							<h1 class="text-base font-bold mt-5">Congratulations Kobe!</h1>
-							<h1 class="text-gray-400 mt-2">You’ve just earned a golden batch.</h1>
-							<button class="bg-[#57B06C] rounded-md text-white p-2 w-1/2 mt-5">View Analytics</button>
-						</div>
-					</div>
-					<div class="p-4 bg-white rounded-md">
-						<h1 class="text-[#0B75B1] text-xl font-medium pb-10 ">Notice Board</h1>
-						<div class="flex mb-5">
-							<div class="bg-[#0bb1b11a] rounded-md text-[#0B75B1] font-medium p-2 text-center mr-2">
-								<h1>19</h1>
-								<h1>Jan</h1>
-							</div>
-							<div class="">
-								<h1 class="text-base font-medium">Board Meeting Completed</h1>
-								<h1 class="text-[#333333] text-sm">Attend the company Manager for this reason...</h1>
-							</div>
-						</div>
-						<div class="flex mb-5">
-							<div class="bg-[#0bb1b11a] rounded-md text-[#614E85] font-medium p-2 text-center mr-2">
-								<h1>19</h1>
-								<h1>Jan</h1>
-							</div>
-							<div class="">
-								<h1 class="text-base font-medium">Updated The Company Policy</h1>
-								<h1 class="text-[#614E85] text-sm">Attend the company Manager for this reason...</h1>
-							</div>
-						</div>
-						<div class="flex mb-5">
-							<div class="bg-[#0bb1b11a] rounded-md text-[#614E85] font-medium p-2 text-center mr-2">
-								<h1>19</h1>
-								<h1>Jan</h1>
-							</div>
-							<div class="">
-								<h1 class="text-base font-medium">Office Timing has been Changed</h1>
-								<h1 class="text-[#614E85] text-sm">Attend the company Manager for this reason...</h1>
-							</div>
-						</div>
-						<div class="flex mb-5">
-							<div class="bg-[#0bb1b11a] rounded-md text-[#614E85] font-medium p-2 text-center mr-2">
-								<h1>19</h1>
-								<h1>Jan</h1>
-							</div>
-							<div class="">
-								<h1 class="text-base font-medium">Office Timing has been Changed</h1>
-								<h1 class="text-[#614E85] text-sm">Attend the company Manager for this reason...</h1>
-							</div>
-						</div>
-						<div class="flex mb-5">
-							<div class="bg-[#0bb1b11a] rounded-md text-[#614E85] font-medium p-2 text-center mr-2">
-								<h1>19</h1>
-								<h1>Jan</h1>
-							</div>
-							<div class="">
-								<h1 class="text-base font-medium">Office Timing has been Changed</h1>
-								<h1 class="text-[#614E85] text-sm">Attend the company Manager for this reason...</h1>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section>
-			<div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 my-5 gap-4">
-				<div class="shadow-md bg-white p-5 rounded-md">
-					<div class="flex justify-between items-center">
-						<h1 class=" text-[#0B75B1] font-medium text-xl">Top Selling Products</h1>
-						<div>
-							<select
-								class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-6 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-								<option selected>Weekly</option>
-								<option value="US">Daily</option>
-								<option value="CA">Monthly</option>
-							</select>
-						</div>
-					</div>
-					<div class="flex justify-between mt-10 mb-5">
-						<div class="flex items-center">
-							<div>
-								<img src="./assets/images/products/black-headphone.png" alt="">
-							</div>
-							<div class="ml-3">
-								<h1 class="font-medium text-base text-[#333333]">Product Name 1</h1>
-								<h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
-							</div>
-						</div>
-						<div>
-							<h1 class="text-[#0b75b1] opacity-70 text-base mt-4">$20.75</h1>
-						</div>
-					</div>
-					<div class="flex justify-between mt-10 mb-5">
-						<div class="flex items-center">
-							<div>
-								<img src="./assets/images/products/silver-component.png" alt="">
-							</div>
-							<div class="ml-3">
-								<h1 class="font-medium text-base text-[#333333]">Product Name 2</h1>
-								<h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
-							</div>
-						</div>
-						<div>
-							<h1 class="text-[#0b75b1] opacity-70 text-base mt-4">$20.75</h1>
-						</div>
-					</div>
-					<div class="flex justify-between mt-10 mb-5">
-						<div class="flex items-center">
-							<div>
-								<img src="./assets/images/products/blue-shoe.png" alt="">
-							</div>
-							<div class="ml-3">
-								<h1 class="font-medium text-base text-[#333333]">Product Name 3</h1>
-								<h1 class="text-[#333333] text-sm opacity-50  mt-4">150 in stocks</h1>
-							</div>
-						</div>
-						<div>
-							<h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
-						</div>
-					</div>
-					<div class="flex justify-between mt-10 mb-5">
-						<div class="flex items-center">
-							<div>
-								<img src="./assets/images/products/black-headphone.png" alt="">
-							</div>
-							<div class="ml-3">
-								<h1 class="font-medium text-base text-[#333333]">Product Name 4</h1>
-								<h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
-							</div>
-						</div>
-						<div>
-							<h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
-						</div>
-					</div>
-					<div class="flex justify-between mt-10 mb-5">
-						<div class="flex items-center">
-							<div>
-								<img src="./assets/images/products/white-bag.png" alt="">
-							</div>
-							<div class="ml-3">
-								<h1 class="font-medium text-base text-[#333333]">Product Name 5</h1>
-								<h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
-							</div>
-						</div>
-						<div>
-							<h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
-						</div>
-					</div>
-				</div>
-				<div class="shadow-md bg-white p-5 rounded-md">
-					<div class="flex justify-between items-center">
-						<h1 class=" text-[#0B75B1] font-medium text-xl">Projects Overview</h1>
-						<div>
-							<select
-								class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-6 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-								<option selected>Weekly</option>
-								<option value="US">Daily</option>
-								<option value="CA">Monthly</option>
-							</select>
-						</div>
-					</div>
-					<div>
-						<div id="dobnut-chart" class="mt-20">
-						</div>
-						<div class="flex justify-between flex-wrap">
-							<h1 class="flex items-center text-sm font-medium text-gray-900 dark:text-white mr-10"><span
-									class="flex w-4 h-4 bg-[#4897C4] rounded-full mr-1.5 flex-shrink-0"></span>
-								<span class="text-base">Pending</span>
-							</h1>
-							<h1 class="flex items-center text-sm font-medium text-gray-900 dark:text-white mr-10"><span
-									class="flex w-4 h-4 bg-[#81C491] rounded-full mr-1.5 flex-shrink-0"></span>
-								<span class="text-base">Completed</span>
-							</h1>
-							<h1 class="flex items-center text-sm font-medium text-gray-900 dark:text-white"><span
-									class="flex w-4 h-4 bg-indigo-500 rounded-full mr-1.5 flex-shrink-0"></span>
-								<span class="text-base">Cancelled</span>
-							</h1>
-						</div>
-					</div>
-				</div>
-				<div class="shadow-md bg-white p-5 rounded-md">
-					<div class="flex justify-between items-center">
-						<h1 class=" text-[#0B75B1] font-medium text-xl">Weekly Best Sellers</h1>
-						<div>
-							<select
-								class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-6 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-								<option selected>Weekly</option>
-								<option value="US">Daily</option>
-								<option value="CA">Monthly</option>
-							</select>
-						</div>
-					</div>
-					<div class="flex justify-between mt-10 mb-5">
-						<div class="flex items-center">
-							<div>
-								<img src="./assets/images/avatar/avatar-6.png" alt="">
-							</div>
-							<div class="ml-3">
-								<h1 class="font-medium text-base text-[#333333]">Product Name 1</h1>
-								<h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
-							</div>
-						</div>
-						<div>
-							<h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
-						</div>
-					</div>
-					<div class="flex justify-between mt-10 mb-5">
-						<div class="flex items-center">
-							<div>
-								<img src="./assets/images/avatar/avatar-8.png" alt="">
-							</div>
-							<div class="ml-3">
-								<h1 class="font-medium text-base text-[#333333]">Product Name 2</h1>
-								<h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
-							</div>
-						</div>
-						<div>
-							<h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
-						</div>
-					</div>
-					<div class="flex justify-between mt-10 mb-5">
-						<div class="flex items-center">
-							<div>
-								<img src="./assets/images/avatar/avatar-9.png" alt="">
-							</div>
-							<div class="ml-3">
-								<h1 class="font-medium text-base text-[#333333]">Product Name 3</h1>
-								<h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
-							</div>
-						</div>
-						<div>
-							<h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
-						</div>
-					</div>
-					<div class="flex justify-between mt-10 mb-5">
-						<div class="flex items-center">
-							<div>
-								<img src="./assets/images/avatar/avatar-10.png" alt="">
-							</div>
-							<div class="ml-3">
-								<h1 class="font-medium text-base text-[#333333]">Product Name 4</h1>
-								<h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
-							</div>
-						</div>
-						<div>
-							<h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
-						</div>
-					</div>
-					<div class="flex justify-between mt-10 mb-5">
-						<div class="flex items-center">
-							<div>
-								<img src="./assets/images/avatar/avatar-7.png" alt="">
-							</div>
-							<div class="ml-3">
-								<h1 class="font-medium text-base text-[#333333]">Product Name 5</h1>
-								<h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
-							</div>
-						</div>
-						<div>
-							<h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section>
-			<div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 my-5 gap-4">
-				<div class="shadow-md bg-white p-5 rounded-md col-span-2">
-					<div class="flex justify-between items-center">
-						<h1 class=" text-[#0B75B1] font-medium text-xl">Latest orders</h1>
-						<div>
-							<select id="countries"
-								class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-6 py-2 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
-								<option selected>Weekly</option>
-								<option value="US">Daily</option>
-								<option value="CA">Monthly</option>
-							</select>
-						</div>
-					</div>
-					<div class="relative overflow-x-auto shadow-xs sm:rounded-lg mt-5">
-						<table class="w-full text-left">
-							<thead class=" text-white border-2 border-[#333333] border-opacity-5 ">
-								<tr>
-									<th scope="col"
-										class="px-6 py-3 text-[#333333] font-medium text-base  border-2 border-[#333333] border-opacity-5">
-										<div class=" flex justify-between items-center flex-wrap">
-											Product
-											<div>
-												<img src="./assets/images/icons/small-swap.png" alt="">
-											</div>
-										</div>
-									</th>
-									<th scope="col"
-										class="px-6 py-3 text-[#333333] font-medium text-base  border-2 border-[#333333] border-opacity-5">
-										<div class=" flex justify-between items-center flex-wrap">
-											Date
-											<div>
-												<img src="./assets/images/icons/small-swap.png" alt="">
-											</div>
-										</div>
-									</th>
-									<th scope="col"
-										class="px-6 py-3 text-[#333333] font-medium text-base  border-2 border-[#333333] border-opacity-5">
-										<div class=" flex justify-between items-center flex-wrap">
-											Revenue
-											<div>
-												<img src="./assets/images/icons/small-swap.png" alt="">
-											</div>
-										</div>
-									</th>
-									<th scope="col"
-										class="px-6 py-3 text-[#333333] font-medium text-base  border-2 border-[#333333] border-opacity-5">
-										<div class=" flex justify-between items-center flex-wrap">
-											Net Profit
-											<div>
-												<img src="./assets/images/icons/small-swap.png" alt="">
-											</div>
-										</div>
-									</th>
-									<th scope="col"
-										class="px-6 py-3 text-[#333333] font-medium text-base  border-2 border-[#333333] border-opacity-5">
-										<div class=" flex justify-between items-center flex-wrap">
-											Status
-											<div>
-												<img src="./assets/images/icons/small-swap.png" alt="">
-											</div>
-										</div>
-									</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr class=" border-2 border-[#333333] border-opacity-5">
-									<th scope="row"
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										Product Name 1
-									</th>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										12 Jan, 2023
-									</td>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										$175.25
-									</td>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										$75.25
-									</td>
-									<td class="px-6 py-4 text-[#4897C4] text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										Pending
-									</td>
-								</tr>
-								<tr class=" border-2 border-[#333333] border-opacity-5">
-									<th scope="row"
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										Product Name 2
-									</th>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										12 Jan, 2023
-									</td>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										$175.25
-									</td>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										$75.25
-									</td>
-									<td class="px-6 py-4 text-[#81C491] text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										Complete
-									</td>
-								</tr>
-								<tr class=" border-2 border-[#333333] border-opacity-5">
-									<th scope="row"
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										Product Name 3
-									</th>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										12 Jan, 2023
-									</td>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										$175.25
-									</td>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										$75.25
-									</td>
-									<td class="px-6 py-4 text-[#EE9191] text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										Cencelled
-									</td>
-								</tr>
-								<tr class=" border-2 border-[#333333] border-opacity-5">
-									<th scope="row"
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										Product Name 4
-									</th>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										12 Jan, 2023
-									</td>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										$175.25
-									</td>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										$75.25
-									</td>
-									<td class="px-6 py-4 text-[#EE9191] text-sm font-medium">
-										Cencelled
-									</td>
-								</tr>
-								<tr class=" border-2 border-[#333333] border-opacity-5">
-									<th scope="row"
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										Product Name 5
-									</th>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										12 Jan, 2023
-									</td>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										$175.25
-									</td>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										$75.25
-									</td>
-									<td class="px-6 py-4 text-[#EE9191] text-sm font-medium">
-										Cencelled
-									</td>
-								</tr>
-								<tr class=" border-2 border-[#333333] border-opacity-5">
-									<th scope="row"
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										Product Name 6
-									</th>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										12 Jan, 2023
-									</td>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										$175.25
-									</td>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										$75.25
-									</td>
-									<td class="px-6 py-4 text-[#EE9191] text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										Cencelled
-									</td>
-								</tr>
-								<tr class=" border-2 border-[#333333] border-opacity-5">
-									<th scope="row"
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										Product Name 7
-									</th>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										12 Jan, 2023
-									</td>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										$175.25
-									</td>
-									<td
-										class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
-										$75.25
-									</td>
-									<td class="px-6 py-4 text-[#EE9191] text-sm font-medium">
-										Cencelled
-									</td>
-								</tr>
-							</tbody>
-						</table>
-					</div>
-				</div>
-				<div class="shadow-md bg-white md:col-span-1 col-span-2 rounded-md p-5">
-					<h1 class="text-[#0B75B1] text-xl font-medium pb-5">Upcoming Meetings</h1>
-					<div class="flex justify-between">
-						<div class="flex mb-7 items-center">
-							<div class="bg-[#0bb1b11a] rounded-md text-[#0B75B1] font-medium p-2 text-center mr-2">
-								<h1>19</h1>
-								<h1>Jan</h1>
-							</div>
-							<div class="">
-								<h1 class="text-base font-medium">Developer’s Meetup</h1>
-								<h1 class="text-[#333333] text-sm">Central Park | 10:00 am</h1>
-							</div>
-						</div>
-						<div class="flex gap-1 mt-2">
-							<div class="flex -space-x-4 cursor-pointer">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-in"
-									src="./assets/images/avatar/avatar1.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar2.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar3.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar4.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar5.jpg" alt="">
+    <section>
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+        <div class="col-span-3">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-4 rounded-md gap-4">
+            <div class=" bg-[#008891] opacity-70 rounded-lg drop-shadow-md">
+              <div class="p-5">
+                <h1 class="text-white text-sm font-semibold mb-2 opacity-70">TOTAL REVENUE</h1>
+                <div class="flex justify-between items-center flex-wrap gap-1">
+                  <div>
+                    <h1 class="text-3xl text-white font-semibold">$3450.75</h1>
+                  </div>
+                  <div class="flex items-center bg-[#86F090] bg-opacity-10 p-1">
+                    <h1 class="text-[#86F090] text-base mr-2">20.11%</h1>
+                    <img src="./assets/images/icons/Arrow - Down.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <img src="./assets/images/chart-image/wave.png" class="mt-5" alt="">
+            </div>
+            <div class="bg-[#614E85] rounded-lg opacity-70 drop-shadow-md">
+              <div class="p-5">
+                <h1 class="text-white text-sm font-semibold mb-2 opacity-70">TOTAL CUSTOMER ACQUISITION COST</h1>
+                <div class="flex items-center justify-between p-1 flex-wrap">
+                  <div>
+                    <h1 class="text-3xl text-white font-semibold">$123,450.00</h1>
+                  </div>
+                  <div class="flex items-center bg-[#FF9494] bg-opacity-10 p-1">
+                    <h1 class="text-[#FF9494] text-base mr-2">20.11%</h1>
+                    <img src="./assets/images/icons/arrow-down-2.png" alt="">
+                  </div>   
+                </div>
+              </div>
+              <img src="./assets/images/chart-image/wave.png" class="mt-5" alt="">
+            </div>
+            <div class="bg-[#0B75B1] rounded-lg opacity-70 drop-shadow-md">
+              <div class="p-5">
+                <h1 class="text-white text-sm font-semibold mb-2 opacity-70">TOTAL CONVERSION RATE</h1>
+               <div class="flex justify-between flex-wrap">
+                <h1 class="text-3xl text-white font-semibold">42.15%</h1>
+                <div class="flex items-center bg-[#86F090] bg-opacity-10 p-1">
+                  <h1 class="text-[#86F090] text-base mr-2">20.11%</h1>
+                  <img src="./assets/images/icons/Arrow - Down.png" alt="">
+                </div>
+               </div>
+              </div>
+              <img src="./assets/images/chart-image/wave.png" class="mt-5" alt="">
+            </div>
+          </div>
+          <div class="rounded-md drop-shadow-md bg-white p-5">
+           <div class="flex flex-col">
+            <div class="flex justify-between items-center mb-1">
+              <h1 class=" text-[#0B75B1] font-medium text-xl ml-4">Sell Overview</h1>
+              <div>
+                <button class="bg-[#57B06C] text-white p-2 rounded-md font-medium text-sm">Earnings</button>
+                <button class="bg-[#F7F7F7] text-[#333333] p-2 rounded-md font-medium text-sm">Spendings</button>
+              </div>
+            </div>
+            <div class="flex ite">
+              <h1 class="text-3xl font-semibold ml-4">$3450.75</h1>
+              <div>
+                <img src="./assets/images/icons/arrow-up.png" alt="">
+              </div>
+            </div>
+            <div id="wave-chart-demo"></div>
+           </div>
+          </div>
+        </div>
+        <div class="lg:col-span-1 col-span-2">
+          <div class=" bg-white mb-5 rounded-md drop-shadow-md">
+            <div class="text-center p-5">
+              <img src="./assets/images/icons/badge.png" class="mx-auto" alt="">
+              <h1 class="text-base font-bold mt-5">Congratulations Kobe!</h1>
+              <h1 class="text-gray-400 mt-2">You’ve just earned a golden batch.</h1>
+              <button class="bg-[#57B06C] rounded-md text-white p-2 w-1/2 mt-5">View Analytics</button>
+            </div>
+          </div>
+          <div class="p-4 bg-white rounded-md drop-shadow-md">
+            <div class="flex flex-col gap-5">
+              <h1 class="text-[#0B75B1] text-xl font-medium">Notice Board</h1>
+            <div class="flex gap-2">
+              <div class="bg-[#0bb1b11a] rounded-md text-[#0B75B1] font-medium p-2 text-center max-h-14">
+                <h1 class="text-xs font-medium">19</h1>
+                <h1 class="text-xs font-medium">Jan</h1>
+              </div>
+              <div class="">
+                <h1 class="text-base font-medium">Board Meeting Completed</h1>
+                <h1 class="text-[#333333] text-sm">Attend the company Manager for this reason...</h1>
+              </div>
+            </div>
+            <div class="flex gap-2">
+              <div class="bg-[#EFEDF3] rounded-md text-[#614E85] font-medium p-2 text-center max-h-14">
+                <h1 class="text-xs font-medium">19</h1>
+                <h1 class="text-xs">Jan</h1>
+              </div>
+              <div class="">
+                <h1 class="text-base font-medium">Updated The Company Policy</h1>
+                <h1 class="text-[#333333] text-sm">Attend the company Manager for this reason...</h1>
+              </div>
+            </div>
+            <div class="flex gap-2">
+              <div class="bg-[#E5F3F4] rounded-md text-[#008891] font-medium p-2 text-center max-h-14">
+                <h1 class="text-xs font-medium">19</h1>
+                <h1 class="text-xs">Jan</h1>
+              </div>
+              <div class="">
+                <h1 class="text-base font-medium">Office Timing has been Changed</h1>
+                <h1 class="text-[#333333] text-sm">Attend the company Manager for this reason...</h1>
+              </div>
+            </div>
+            <div class="flex gap-2">
+              <div class="bg-[#E7F1F7] rounded-md text-[#0B75B1] font-medium p-2 text-center max-h-14">
+                <h1 class="text-xs font-medium">19</h1>
+                <h1 class="text-xs">Jan</h1>
+              </div>
+              <div class="">
+                <h1 class="text-base font-medium">Office Timing has been Changed</h1>
+                <h1 class="text-[#333333] text-sm">Attend the company Manager for this reason...</h1>
+              </div>
+            </div>
+            <div class="flex gap-2">
+              <div class="bg-[#0bb1b11a] rounded-md text-[#614E85] font-medium p-2 text-center max-h-14">
+                <h1 class="text-xs font-medium">19</h1>
+                <h1 class="text-xs">Jan</h1>
+              </div>
+              <div class="">
+                <h1 class="text-base font-medium">Office Timing has been Changed</h1>
+                <h1 class="text-[#333333] text-sm">Attend the company Manager for this reason...</h1>
+              </div>
+            </div>
+            <div class="flex gap-2">
+              <div class="bg-[#0bb1b11a] rounded-md text-[#614E85] font-medium p-2 text-center max-h-14">
+                <h1 class="text-xs font-medium">19</h1>
+                <h1 class="text-xs">Jan</h1>
+              </div>
+              <div class="">
+                <h1 class="text-base font-medium">Office Timing has been Changed</h1>
+                <h1 class="text-[#333333] text-sm">Attend the company Manager for this reason...</h1>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 my-5 gap-4">
+        <div class=" bg-white p-5 rounded-md drop-shadow-md">
+          <div class="flex flex-col gap-5">
+            <div class="flex justify-between items-center">
+              <h1 class=" text-[#0B75B1] font-medium text-xl">Top Selling Products</h1>
+              <div>
+                <select id="countries"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-6 py-2">
+                  <option selected>Weekly</option>
+                  <option value="US">Daily</option>
+                  <option value="CA">Monthly</option>
+                </select>
+              </div>
+            </div>
+            <div class="flex justify-between flex-wrap">
+              <div class="flex items-center">
+                <div>
+                  <img src="./assets/images/products/black-headphone.png" alt="">
+                </div>
+                <div class="ml-3">
+                  <h1 class="font-medium text-base text-[#333333]">Product Name 1</h1>
+                  <h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-[#0b75b1] opacity-70 text-base mt-4">$20.75</h1>
+              </div>
+            </div>
+            <div class="flex justify-between flex-wrap">
+              <div class="flex items-center">
+                <div>
+                  <img src="./assets/images/products/silver-component.png" alt="">
+                </div>
+                <div class="ml-3">
+                  <h1 class="font-medium text-base text-[#333333]">Product Name 2</h1>
+                  <h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-[#0b75b1] opacity-70 text-base mt-4">$20.75</h1>
+              </div>
+            </div>
+            <div class="flex justify-between flex-wrap">
+              <div class="flex items-center">
+                <div>
+                  <img src="./assets/images/products/blue-shoe.png" alt="">
+                </div>
+                <div class="ml-3">
+                  <h1 class="font-medium text-base text-[#333333]">Product Name 3</h1>
+                  <h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
+              </div>
+            </div>
+            <div class="flex justify-between flex-wrap">
+              <div class="flex items-center">
+                <div>
+                  <img src="./assets/images/products/black-headphone.png" alt="">
+                </div>
+                <div class="ml-3">
+                  <h1 class="font-medium text-base text-[#333333]">Product Name 4</h1>
+                  <h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
+              </div>
+            </div>
+            <div class="flex justify-between flex-wrap">
+              <div class="flex items-center">
+                <div>
+                  <img src="./assets/images/products/white-bag.png" alt="">
+                </div>
+                <div class="ml-3">
+                  <h1 class="font-medium text-base text-[#333333]">Product Name 5</h1>
+                  <h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
+                </div>
+              </div>
+              <div>
+                <h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="drop-shadow-md bg-white p-5 rounded-md ">
+          <div class="flex flex-col gap-5">
+            <div class="flex justify-between items-center">
+              <h1 class=" text-[#0B75B1] font-medium text-xl">Projects Overview</h1>
+              <div>
+                <select id="countries"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-6 py-2">
+                  <option selected>Weekly</option>
+                  <option value="US">Daily</option>
+                  <option value="CA">Monthly</option>
+                </select>
+              </div>
+            </div>
+            <div id="dobnut-chart">
+            </div>
+            <div class="flex justify-between flex-wrap">
+              <span class="flex items-center text-sm font-medium text-gray-900 mr-10"><span
+                  class="flex w-4 h-4 bg-[#4897C4] rounded-full mr-1.5 flex-shrink-0"></span>
+                <h1 class="text-base">Pending</h1>
+              </span>
+              <span class="flex items-center text-sm font-medium text-gray-900 mr-10"><span
+                  class="flex w-4 h-4 bg-[#81C491] rounded-full mr-1.5 flex-shrink-0"></span>
+                <h1 class="text-base">Completed</h1>
+              </span>
+              <span class="flex items-center text-sm font-medium text-gray-900"><span
+                  class="flex w-4 h-4 bg-indigo-500 rounded-full mr-1.5 flex-shrink-0"></span>
+                <h1 class="text-base">Cancelled</h1>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="drop-shadow-md bg-white p-5 rounded-md">
+         <div class="flex flex-col gap-5">
+          <div class="flex justify-between items-center">
+            <h1 class=" text-[#0B75B1] font-medium text-xl">Weekly Best Sellers</h1>
+            <div>
+              <select id="countries"
+                class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-6 py-2">
+                <option selected>Weekly</option>
+                <option value="US">Daily</option>
+                <option value="CA">Monthly</option>
+              </select>
+            </div>
+          </div>
+          <div class="flex justify-between flex-wrap">
+            <div class="flex items-center">
+              <div>
+                <img src="./assets/images/avatar/avatar-6.png" alt="">
+              </div>
+              <div class="ml-3">
+                <h1 class="font-medium text-base text-[#333333]">Product Name 1</h1>
+                <h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
+              </div>
+            </div>
+            <div>
+              <h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
+            </div>
+          </div>
+          <div class="flex justify-between flex-wrap">
+            <div class="flex items-center">
+              <div>
+                <img src="./assets/images/avatar/avatar-8.png" alt="">
+              </div>
+              <div class="ml-3">
+                <h1 class="font-medium text-base text-[#333333]">Product Name 2</h1>
+                <h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
+              </div>
+            </div>
+            <div>
+              <h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
+            </div>
+          </div>
+          <div class="flex justify-between flex-wrap">
+            <div class="flex items-center">
+              <div>
+                <img src="./assets/images/avatar/avatar-9.png" alt="">
+              </div>
+              <div class="ml-3">
+                <h1 class="font-medium text-base text-[#333333]">Product Name 3</h1>
+                <h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
+              </div>
+            </div>
+            <div>
+              <h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
+            </div>
+          </div>
+          <div class="flex justify-between flex-wrap">
+            <div class="flex items-center">
+              <div>
+                <img src="./assets/images/avatar/avatar-10.png" alt="">
+              </div>
+              <div class="ml-3">
+                <h1 class="font-medium text-base text-[#333333]">Product Name 4</h1>
+                <h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
+              </div>
+            </div>
+            <div>
+              <h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
+            </div>
+          </div>
+          <div class="flex justify-between flex-wrap">
+            <div class="flex items-center">
+              <div>
+                <img src="./assets/images/avatar/avatar-7.png" alt="">
+              </div>
+              <div class="ml-3">
+                <h1 class="font-medium text-base text-[#333333]">Product Name 5</h1>
+                <h1 class="text-[#333333] text-sm opacity-50">150 in stocks</h1>
+              </div>
+            </div>
+            <div>
+              <h1 class="text-[#0b75b1] opacity-70 text-base  mt-4">$20.75</h1>
+            </div>
+          </div>
+         </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+        <div class="drop-shadow-md bg-white p-5 rounded-md col-span-2 ">
+          <div class="flex flex-col gap-5">
+            <div class="flex justify-between items-center">
+              <h1 class=" text-[#0B75B1] font-medium text-xl">Latest orders</h1>
+              <div>
+                <select id="countries"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full px-6 py-2">
+                  <option selected>Weekly</option>
+                  <option value="US">Daily</option>
+                  <option value="CA">Monthly</option>
+                </select>
+              </div>
 
-							</div>
-						</div>
-					</div>
-					<div class="flex justify-between">
-						<div class="flex mb-7 items-center">
-							<div class="bg-[#0bb1b11a] rounded-md text-[#614E85] font-medium p-2 text-center mr-2">
-								<h1>19</h1>
-								<h1>Jan</h1>
-							</div>
-							<div class="">
-								<h1 class="text-base font-medium">Developer’s Meetup</h1>
-								<h1 class="text-[#614E85] text-sm">Central Park | 10:00 am</h1>
-							</div>
-						</div>
-						<div class="flex gap-1 mt-2">
-							<div class="flex -space-x-4 cursor-pointer">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-in"
-									src="./assets/images/avatar/avatar1.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar2.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar3.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar4.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar5.jpg" alt="">
-
-							</div>
-						</div>
-					</div>
-					<div class="flex justify-between">
-						<div class="flex mb-7 items-center">
-							<div class="bg-[#0bb1b11a] rounded-md text-[#614E85] font-medium p-2 text-center mr-2">
-								<h1>19</h1>
-								<h1>Jan</h1>
-							</div>
-							<div class="">
-								<h1 class="text-base font-medium">Developer’s Meetup</h1>
-								<h1 class="text-[#614E85] text-sm">Central Park | 10:00 am</h1>
-							</div>
-
-						</div>
-						<div class="flex gap-1 mt-2">
-							<div class="flex -space-x-4 cursor-pointer">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-in"
-									src="./assets/images/avatar/avatar1.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar2.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar3.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar4.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar5.jpg" alt="">
-
-							</div>
-						</div>
-					</div>
-					<div class="flex justify-between">
-						<div class="flex mb-7 items-center">
-							<div class="bg-[#0bb1b11a] rounded-md text-[#614E85] font-medium p-2 text-center mr-2">
-								<h1>19</h1>
-								<h1>Jan</h1>
-							</div>
-							<div class="">
-								<h1 class="text-base font-medium">Developer’s Meetup</h1>
-								<h1 class="text-[#614E85] text-sm">Central Park | 10:00 am</h1>
-							</div>
-
-						</div>
-						<div class="flex gap-1 mt-2">
-							<div class="flex -space-x-4 cursor-pointer">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-in"
-									src="./assets/images/avatar/avatar1.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar2.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar3.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar4.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar5.jpg" alt="">
-
-							</div>
-						</div>
-					</div>
-					<div class="flex justify-between">
-						<div class="flex mb-7 items-center">
-							<div class="bg-[#0bb1b11a] rounded-md text-[#0B75B1] font-medium p-2 text-center mr-2">
-								<h1>19</h1>
-								<h1>Jan</h1>
-							</div>
-							<div class="">
-								<h1 class="text-base font-medium">Developer’s Meetup</h1>
-								<h1 class="text-[#333333] text-sm">Central Park | 10:00 am</h1>
-							</div>
-						</div>
-						<div class="flex gap-1 mt-2">
-							<div class="flex -space-x-4 cursor-pointer">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-in"
-									src="./assets/images/avatar/avatar1.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar2.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar3.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar4.jpg" alt="">
-								<img
-									class="w-9 h-9 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
-									src="./assets/images/avatar/avatar5.jpg" alt="">
-
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+            </div>
+            <div class="relative overflow-x-auto shadow-xs sm:rounded-lg">
+              <table class="w-full text-left">
+                <thead class=" text-white border-2 border-[#333333] border-opacity-5 ">
+                  <tr>
+                    <th scope="col"
+                      class="px-6 py-3 text-[#333333] font-medium text-base  border-2 border-[#333333] border-opacity-5">
+                      <div class=" flex justify-between items-center flex-wrap">
+                        <h1> Product</h1>
+                        <div>
+                          <img src="./assets/images/icons/small-swap.png" alt="">
+                        </div>
+                      </div>
+                    </th>
+                    <th scope="col"
+                      class="px-6 py-3 text-[#333333] font-medium text-base  border-2 border-[#333333] border-opacity-5">
+                      <div class=" flex justify-between items-center flex-wrap">
+                        <h1>Date</h1>
+                        <div>
+                          <img src="./assets/images/icons/small-swap.png" alt="">
+                        </div>
+                      </div>
+                    </th>
+                    <th scope="col"
+                      class="px-6 py-3 text-[#333333] font-medium text-base  border-2 border-[#333333] border-opacity-5">
+                      <div class=" flex justify-between items-center flex-wrap">
+                        <h1>Revenue</h1>
+                        <div>
+                          <img src="./assets/images/icons/small-swap.png" alt="">
+                        </div>
+                      </div>
+                    </th>
+                    <th scope="col"
+                      class="px-6 py-3 text-[#333333] font-medium text-base  border-2 border-[#333333] border-opacity-5">
+                      <div class=" flex justify-between items-center flex-wrap">
+                        <h1>Net Profit</h1>
+                        <div>
+                          <img src="./assets/images/icons/small-swap.png" alt="">
+                        </div>
+                      </div>
+                    </th>
+                    <th scope="col"
+                      class="px-6 py-3 text-[#333333] font-medium text-base  border-2 border-[#333333] border-opacity-5">
+                      <div class=" flex justify-between items-center flex-wrap">
+                        Status
+                        <div>
+                          <img src="./assets/images/icons/small-swap.png" alt="">
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class=" border-2 border-[#333333] border-opacity-5">
+                    <th scope="row"
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      Product Name 1
+                    </th>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      12 Jan, 2023
+                    </td>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      $175.25
+                    </td>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      $75.25
+                    </td>
+                    <td class="px-6 py-4 text-[#4897C4] text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      Pending
+                    </td>
+                  </tr>
+                  <tr class=" border-2 border-[#333333] border-opacity-5">
+                    <th scope="row"
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      Product Name 2
+                    </th>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      12 Jan, 2023
+                    </td>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      $175.25
+                    </td>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      $75.25
+                    </td>
+                    <td class="px-6 py-4 text-[#81C491] text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      Complete
+                    </td>
+                  </tr>
+                  <tr class=" border-2 border-[#333333] border-opacity-5">
+                    <th scope="row"
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      Product Name 3
+                    </th>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      12 Jan, 2023
+                    </td>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      $175.25
+                    </td>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      $75.25
+                    </td>
+                    <td class="px-6 py-4 text-[#EE9191] text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      Cencelled
+                    </td>
+                  </tr>
+                  <tr class=" border-2 border-[#333333] border-opacity-5">
+                    <th scope="row"
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      Product Name 4
+                    </th>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      12 Jan, 2023
+                    </td>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      $175.25
+                    </td>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      $75.25
+                    </td>
+                    <td class="px-6 py-4 text-[#EE9191] text-sm font-medium">
+                      Cencelled
+                    </td>
+                  </tr>
+                  <tr class=" border-2 border-[#333333] border-opacity-5">
+                    <th scope="row"
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      Product Name 5
+                    </th>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      12 Jan, 2023
+                    </td>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      $175.25
+                    </td>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      $75.25
+                    </td>
+                    <td class="px-6 py-4 text-[#EE9191] text-sm font-medium">
+                      Cencelled
+                    </td>
+                  </tr>
+                  <tr class=" border-2 border-[#333333] border-opacity-5">
+                    <th scope="row"
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      Product Name 6
+                    </th>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      12 Jan, 2023
+                    </td>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      $175.25
+                    </td>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      $75.25
+                    </td>
+                    <td class="px-6 py-4 text-[#EE9191] text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      Cencelled
+                    </td>
+                  </tr>
+                  <tr class=" border-2 border-[#333333] border-opacity-5">
+                    <th scope="row"
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      Product Name 7
+                    </th>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      12 Jan, 2023
+                    </td>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      $175.25
+                    </td>
+                    <td
+                      class="px-6 py-4 text-[#333333] opacity-50 text-sm font-medium  border-2 border-[#333333] border-opacity-5">
+                      $75.25
+                    </td>
+                    <td class="px-6 py-4 text-[#EE9191] text-sm font-medium">
+                      Cencelled
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="shadow-md bg-white col-span-1 rounded-md p-5">
+          <div class="flex flex-col gap-5">
+            <h1 class="text-[#0B75B1] text-xl font-medium">Upcoming Meetings</h1>
+            <div class="flex justify-between flex-wrap">
+              <div class="flex items-center">
+                <div class="bg-[#0bb1b11a] rounded-md text-[#0B75B1] font-medium p-2 text-center mr-2">
+                  <h1  class="text-xs font-medium">19</h1>
+                  <h1  class="text-xs font-medium">Jan</h1>
+                </div>
+                <div class="">
+                  <h1 class="text-base font-medium">Developer’s Meetup</h1>
+                  <h1 class="text-[#333333] text-sm">Central Park | 10:00 am</h1>
+                </div>
+              </div>
+              <div class="flex gap-1 mt-2">
+                <div class="flex -space-x-4 cursor-pointer">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-in"
+                    src="./assets/images/avatar/avatar1.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar2.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar3.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar4.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar5.jpg" alt="">
+  
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between flex-wrap">
+              <div class="flex items-center">
+                <div class="bg-[#0bb1b11a] rounded-md text-[#614E85] font-medium p-2 text-center mr-2">
+                  <h1  class="text-xs font-medium">19</h1>
+                  <h1  class="text-xs font-medium">Jan</h1>
+                </div>
+                <div class="">
+                  <h1 class="text-base font-medium">Developer’s Meetup</h1>
+                  <h1 class="text-[#614E85] text-sm">Central Park | 10:00 am</h1>
+                </div>
+              </div>
+              <div class="flex gap-1 mt-2">
+                <div class="flex -space-x-4 cursor-pointer">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-in"
+                    src="./assets/images/avatar/avatar1.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar2.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar3.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar4.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar5.jpg" alt="">
+  
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between flex-wrap">
+              <div class="flex items-center">
+                <div class="bg-[#0bb1b11a] rounded-md text-[#614E85] font-medium p-2 text-center mr-2">
+                  <h1  class="text-xs font-medium">19</h1>
+                  <h1  class="text-xs font-medium">Jan</h1>
+                </div>
+                <div class="">
+                  <h1 class="text-base font-medium">Developer’s Meetup</h1>
+                  <h1 class="text-[#614E85] text-sm">Central Park | 10:00 am</h1>
+                </div>
+  
+              </div>
+              <div class="flex gap-1 mt-2">
+                <div class="flex -space-x-4 cursor-pointer">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-in"
+                    src="./assets/images/avatar/avatar1.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar2.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar3.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar4.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar5.jpg" alt="">
+  
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between flex-wrap">
+              <div class="flex items-center">
+                <div class="bg-[#0bb1b11a] rounded-md text-[#614E85] font-medium p-2 text-center mr-2">
+                  <h1  class="text-xs font-medium">19</h1>
+                  <h1  class="text-xs font-medium">Jan</h1>
+                </div>
+                <div class="">
+                  <h1 class="text-base font-medium">Developer’s Meetup</h1>
+                  <h1 class="text-[#614E85] text-sm">Central Park | 10:00 am</h1>
+                </div>
+  
+              </div>
+              <div class="flex gap-1 mt-2">
+                <div class="flex -space-x-4 cursor-pointer">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-in"
+                    src="./assets/images/avatar/avatar1.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar2.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar3.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar4.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar5.jpg" alt="">
+  
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between flex-wrap">
+              <div class="flex items-center">
+                <div class="bg-[#0bb1b11a] rounded-md text-[#0B75B1] font-medium p-2 text-center mr-2">
+                  <h1  class="text-xs font-medium">19</h1>
+                  <h1  class="text-xs font-medium">Jan</h1>
+                </div>
+                <div class="">
+                  <h1 class="text-base font-medium">Developer’s Meetup</h1>
+                  <h1 class="text-[#333333] text-sm">Central Park | 10:00 am</h1>
+                </div>
+              </div>
+              <div class="flex gap-1 mt-2">
+                <div class="flex -space-x-4 cursor-pointer">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-in"
+                    src="./assets/images/avatar/avatar1.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar2.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar3.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar4.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar5.jpg" alt="">
+  
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between flex-wrap">
+              <div class="flex items-center">
+                <div class="bg-[#0bb1b11a] rounded-md text-[#0B75B1] font-medium p-2 text-center mr-2">
+                  <h1  class="text-xs font-medium">19</h1>
+                  <h1  class="text-xs font-medium">Jan</h1>
+                </div>
+                <div class="">
+                  <h1 class="text-base font-medium">Developer’s Meetup</h1>
+                  <h1 class="text-[#333333] text-sm">Central Park | 10:00 am</h1>
+                </div>
+              </div>
+              <div class="flex gap-1 mt-2">
+                <div class="flex -space-x-4 cursor-pointer">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-in"
+                    src="./assets/images/avatar/avatar1.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar2.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar3.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar4.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar5.jpg" alt="">
+  
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-between flex-wrap">
+              <div class="flex items-center">
+                <div class="bg-[#0bb1b11a] rounded-md text-[#0B75B1] font-medium p-2 text-center mr-2">
+                  <h1  class="text-xs font-medium">19</h1>
+                  <h1  class="text-xs font-medium">Jan</h1>
+                </div>
+                <div class="">
+                  <h1 class="text-base font-medium">Developer’s Meetup</h1>
+                  <h1 class="text-[#333333] text-sm">Central Park | 10:00 am</h1>
+                </div>
+              </div>
+              <div class="flex gap-1 mt-2">
+                <div class="flex -space-x-4 cursor-pointer">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-in"
+                    src="./assets/images/avatar/avatar1.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar2.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar3.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar4.jpg" alt="">
+                  <img
+                    class="w-9 h-9 rounded-full border-2 border-white transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avatar5.jpg" alt="">
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 	</main>
 	<!-- MAIN -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>

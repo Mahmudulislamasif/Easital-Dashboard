@@ -1,6 +1,7 @@
 
 const deleteBtns = document.querySelectorAll('.delete-btn');
-
+const addBtn = card.querySelectorAll('.add-to-cart-btn');
+  
 for (const deleteBtn of deleteBtns) {
   const card = deleteBtn.closest('.remove-card');
   deleteBtn.addEventListener('click', () => {
@@ -33,8 +34,6 @@ for (const deleteBtn of deleteBtns) {
       }
     })
   });
-  
-  const addBtn = card.querySelector('.add-to-cart-btn');
   
   addBtn.addEventListener('click', () => {
     Swal.fire({

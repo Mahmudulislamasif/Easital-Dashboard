@@ -1,12 +1,11 @@
-// SIDEBAR DROPDOWN
+// SIDEBAR DROPDOWN MENU
 const allDropdown = document.querySelectorAll('#sidebar .side-dropdown');
+const allDropdownTwo = document.querySelectorAll('#sidebar .side-dropdown-two');
 const sidebar = document.getElementById('sidebar');
-
 allDropdown.forEach(item=> {
 	const a = item.parentElement.querySelector('a:first-child');
 	a.addEventListener('click', function (e) {
 		e.preventDefault();
-
 		if(!this.classList.contains('active')) {
 			allDropdown.forEach(i=> {
 				const aLink = i.parentElement.querySelector('a:first-child');
@@ -15,41 +14,34 @@ allDropdown.forEach(item=> {
 				i.classList.remove('show');
 			})
 		}
-
 		this.classList.toggle('active');
 		item.classList.toggle('show');
 	})
 })
-
-
-
-
-
-// SIDEBAR COLLAPSE
+allDropdownTwo.forEach(item=> {
+	const a = item.parentElement.querySelector('a:first-child');
+	a.addEventListener('click', function (e) {
+		e.preventDefault();
+		if(!this.classList.contains('active')) {
+			allDropdownTwo.forEach(i=> {
+				const aLink = i.parentElement.querySelector('a:first-child');
+				console.log(aLink)
+				aLink.classList.remove('active');
+				i.classList.remove('show');
+			})
+		}
+		this.classList.toggle('active');
+		item.classList.toggle('show');
+	})
+})
 const toggleSidebar = document.querySelector('nav .toggle-sidebar');
 const allSideDivider = document.querySelectorAll('#sidebar .divider');
-
-if(sidebar.classList.contains('hide')) {
-	allSideDivider.forEach(item=> {
-		item.textContent = '-'
-	})
-	allDropdown.forEach(item=> {
-		const a = item.parentElement.querySelector('a:first-child');
-		a.classList.remove('active');
-		item.classList.remove('show');
-	})
-} else {
-	allSideDivider.forEach(item=> {
-		item.textContent = item.dataset.text;
-	})
-}
-
 toggleSidebar.addEventListener('click', function () {
 	sidebar.classList.toggle('hide');
-
+    
 	if(sidebar.classList.contains('hide')) {
 		allSideDivider.forEach(item=> {
-			item.textContent = '-'
+			item.textContent = '...'
 		})
 
 		allDropdown.forEach(item=> {
@@ -64,9 +56,6 @@ toggleSidebar.addEventListener('click', function () {
 	}
 })
 
-
-
-
 sidebar.addEventListener('mouseleave', function () {
 	if(this.classList.contains('hide')) {
 		allDropdown.forEach(item=> {
@@ -79,8 +68,6 @@ sidebar.addEventListener('mouseleave', function () {
 		})
 	}
 })
-
-
 
 sidebar.addEventListener('mouseenter', function () {
 	if(this.classList.contains('hide')) {
