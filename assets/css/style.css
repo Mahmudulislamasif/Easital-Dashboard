@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Nunito&family=Roboto:ital,wght@1,300&display=swap');
-:root
-{
-   --main-color:#8e44ad;
-}
+
 * 
 {
     font-family: 'Nunito', sans-serif;
