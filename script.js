@@ -38,7 +38,7 @@ const toggleSidebar = document.querySelector('nav .toggle-sidebar');
 const allSideDivider = document.querySelectorAll('#sidebar .divider');
 toggleSidebar.addEventListener('click', function () {
 	sidebar.classList.toggle('hide');
-    
+    sidebar.classList.toggle('sidebar-expanded');
 	if(sidebar.classList.contains('hide')) {
 		allSideDivider.forEach(item=> {
 			item.textContent = '...'
