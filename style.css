@@ -1,7 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
 
 * {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -70,9 +71,10 @@ li {
 	font-size: 24px;
 	display: flex;
 	align-items: center;
+	margin-left:25px;
 	height: 64px;
 	font-weight: 700;
-	color: var(--blue);
+	color: var(--dark);
 	position: sticky;
 	top: 0;
 	left: 0;
@@ -80,6 +82,10 @@ li {
 	background: var(--light);
 	transition: all .3s ease;
 	padding: 0 6px;
+}
+#sidebar .brand h1
+{
+	margin-left:10px;
 }
 #sidebar .icon {
 	min-width: 48px;
@@ -211,7 +217,6 @@ nav .toggle-sidebar {
 	cursor: pointer;
 }
 nav form {
-	max-width: 400px;
 	width: 100%;
 	margin-right: auto;
 }
@@ -221,7 +226,7 @@ nav .form-group {
 nav .form-group input {
 	width: 100%;
 	background: var(--grey);
-	border-radius: 5px;
+	border-radius: 40px;
 	border: none;
 	outline: none;
 	padding: 10px 36px 10px 16px;
