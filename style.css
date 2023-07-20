@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 * {
 	font-family: 'Poppins', sans-serif;
@@ -174,7 +174,6 @@ li {
 }
 #sidebar .side-dropdown span{
 	margin-right: 10px;
-	margin-left: 15px;
 }
 #sidebar .side-dropdown-two {
 	padding-left: 24px;
@@ -205,6 +204,7 @@ li {
 	width: calc(100% - 60px);
 	left: 60px;
 }
+
 /* NAVBAR */
 nav {
 	background: var(--light);
@@ -341,3 +341,40 @@ main {
 		display: none;
 	}
 }
+/* CSS for active link in the sidebar */
+#sidebar .side-menu a.active {
+    background-color: var(--blue); /* Example: Change background color for active link */
+    color: var(--light); /* Example: Change text color for active link */
+}
+.range-slider {
+    /* Remove default styles */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Width and height of the slider */
+    width: 100%;
+    height: 4px;
+    /* Custom track color */
+    background-color: #e2e8f0;
+    /* Custom thumb color */
+    background-color: #4a5568;
+    cursor: pointer;
+    /* Custom thumb size */
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Set the custom thumb color when active */
+  .range-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #2d3748;
+  }
+
+  /* Set the custom thumb color when active (Firefox) */
+  .range-slider::-moz-range-thumb {
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #2d3748;
+  }
+  

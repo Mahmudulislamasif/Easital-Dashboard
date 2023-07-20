@@ -136,5 +136,23 @@ window.addEventListener('click', function (e) {
 
 
 
+// JavaScript for handling active link in the sidebar
+document.addEventListener("DOMContentLoaded", function () {
+    const currentPath = window.location.pathname;
+    const sidebarLinks = document.querySelectorAll("#sidebar .side-menu a");
+
+    // Function to check if a link's href matches the current path
+    function isLinkActive(link) {
+        const href = link.getAttribute("href");
+        return currentPath === href;
+    }
+
+    // Set "active" class for the link
+    sidebarLinks.forEach(link => {
+        if (isLinkActive(link)) {
+            link.classList.add("active");
+        }
+    });
+});
 
 
