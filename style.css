@@ -360,3 +360,8 @@ main {
    display:none;
   }
 }
+.active-link
+{
+	background-image: linear-gradient(to left, var(--green), var(--blue));
+	color:white !important;
+}
