@@ -10,11 +10,153 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
 	<title>AdminSite</title>
     <style>
-        .tab-buttons {
+      ::selection{
+  color: #fff;
+  background: #6665ee;
+}
+.skill-bars{
+  background: #fff;
+  border-radius: 10px;
+}
+.skill-bars .bar{
+  margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+  margin-top: 0px;
+}
+.skill-bars .bar .info{
+  margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+  font-weight: 500;
+  font-size: 17px;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+  100%{
+    opacity: 1;
+  }
+}
+.skill-bars .bar .progress-line{
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  transform: scaleX(0);
+  transform-origin: left;
+  border-radius: 10px;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+              0 1px rgba(255,255,255,0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.bar .progress-line .progress-one{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #0B75B1;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line .progress-two{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #57B06C;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line .progress-three{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #F06D5B;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line .progress-four{
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  background: #333333;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.html span{
+  width: 90%;
+}
+.bar .progress-line.css span{
+  width: 60%;
+}
+.bar .progress-line.jquery span{
+  width: 85%;
+}
+.bar .progress-line.python span{
+  width: 50%;
+}
+.bar .progress-line.mysql span{
+  width: 75%;
+}
+.progress-line span::before{
+  position: absolute;
+  content: "";
+  top: -10px;
+  right: 0;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+  position: absolute;
+  top: -28px;
+  right: 0;
+  font-weight: 500;
+  background: #000;
+  color: #fff;
+  padding: 1px 8px;
+  font-size: 12px;
+  border-radius: 3px;
+  opacity: 0;
+  animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+  100%{
+    opacity: 1;
+  }
+}
+.progress-line.html span::after{
+  content: "90%";
+}
+.progress-line.css span::after{
+  content: "60%";
+}
+.progress-line.jquery span::after{
+  content: "85%";
+}
+.progress-line.python span::after{
+  content: "50%";
+}
+.progress-line.mysql span::after{
+  content: "75%";
+}
+.tab-buttons {
   display: flex;
-  background: rgb(232, 234, 233);
-    padding: 10px;
-    border-radius: 9px
+  border-radius: 50%;
+  border:2px;
 }
 
 .tab-buttons button {
@@ -224,22 +366,22 @@
 			<li>
 				<a href="#"><i class='bx bx-shopping-bag icon'></i> eCommerce <i class='bx bx-chevron-right icon-right'></i></a>
 				<ul class="side-dropdown">
-          <li><a href="shop.html"><i class='bx bx-shopping-bag icon'></i><span>Shop</span></i></a></li>
-          <li><a href="shop-details.html"><i class='bx bx-shopping-bag icon'></i><span>Details</span></i></a></li>
-          <li><a href="wishlist.html"><i class='bx bx-shopping-bag icon'></i><span>Wishlist</span></i></a></li>
-          <li><a href="product-checkout.html"><i class='bx bx-shopping-bag icon'></i><span>Checkout</span></i></a></li>
+          <li><a href="shop.html"><i class='bx bx-radio-circle icon'></i><span>Shop</span></i></a></li>
+          <li><a href="shop-details.html"><i class='bx bx-radio-circle icon'></i><span>Details</span></i></a></li>
+          <li><a href="wishlist.html"><i class='bx bx-radio-circle icon'></i><span>Wishlist</span></i></a></li>
+          <li><a href="product-checkout.html"><i class='bx bx-radio-circle icon'></i><span>Checkout</span></i></a></li>
 				</ul>
 			</li>
 			<li>
 				<a href="#"><i class='bx bxs-inbox icon'></i> Components <i class='bx bx-chevron-right icon-right'></i></a>
 				<ul class="side-dropdown">
-					<li><a href="accordion.html"><i class='bx bx-shopping-bag icon'></i><span>Accordion</span></i></a></li>
-					<li><a href="alert.html"><i class='bx bx-shopping-bag icon'></i><span>Alert</span></i></a></li>
-					<li><a href="avatar.html"><i class='bx bx-shopping-bag icon'></i><span>Avatar</span></i></a></li>
-					<li><a href="badges.html"><i class='bx bx-shopping-bag icon'></i><span>Badges</span></i></a></li>
-					<li><a href="breadscrumb.html"><i class='bx bx-shopping-bag icon'></i><span>Breadscrump</span></i></a></li>
-					<li><a href="button.html"><i class='bx bx-shopping-bag icon'></i><span>Button</span></i></a></li>
-          <li><a href="progress.html"><i class='bx bx-shopping-bag icon'></i><span>Progress</span></i></a></li>
+					<li><a href="accordion.html"> <i class='bx bx-radio-circle icon'></i><span>Accordion</span></i></a></li>
+					<li><a href="alert.html"><i class='bx bx bx-radio-circle icon'></i><span>Alert</span></i></a></li>
+					<li><a href="avatar.html"><i class='bx bx bx-radio-circle icon'></i><span>Avatar</span></i></a></li>
+					<li><a href="badges.html"><i class='bx bx bx-radio-circle icon'></i><span>Badges</span></i></a></li>
+					<li><a href="breadscrumb.html"><i class='bx bx bx-radio-circle icon'></i><span>Breadscrump</span></i></a></li>
+					<li><a href="button.html"><i class='bx bx bx-radio-circle icon'></i><span>Button</span></i></a></li>
+          <li><a href="progress.html"><i class='bx bx bx-radio-circle icon'></i><span>Progress</span></i></a></li>
 				</ul>
 			</li>
 			<!-- <li><a href="#"><i class='bx bxs-chart icon'></i> Charts</a></li>
@@ -266,14 +408,7 @@
 				<i class='bx bx-search icon'></i>
 			</div>
 		</form>
-		<a href="#" class="nav-link">
-			<i class='bx bxs-bell icon'></i>
-			<span class="badge">5</span>
-		</a>
-		<a href="#" class="nav-link">
-			<i class='bx bxs-message-square-dots icon'></i>
-			<span class="badge">8</span>
-		</a>
+	
 		<span class="divider"></span>
 		<div class="profile">
 			<img
@@ -291,7 +426,7 @@
 	<!-- MAIN -->
 	<main class="content">
 	<section>
-        <div class="border-[1px] bg-[#F7F7F7] border-opacity-50 p-3 mb-5 rounded-md">
+        <div class=" bg-white  p-3 mb-5 rounded-md">
             <div class="rounded-md">
               <h1 class="text-base"><span class="text-[#333333] opacity-50">Home ></span><span
                   class="text-[#333333] opacity-50"> Components ></span> <span class="text-[#333333] ">Progress</span>
@@ -414,7 +549,48 @@
                   </div>
                 </div>
               
+            </div >
+       
+        </div>
+        <div class="grid grid-cols-1 mt-5">
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1] ">Skill Progress Bar</h1>
+            <div class="skill-bars">
+              <div class="bar">
+                <div class="info">
+                  <span>HTML</span>
+                </div>
+                <div class="progress-line html">
+                  <span class="progress-one"></span>
+                </div>
               </div>
+              <div class="bar">
+                <div class="info">
+                  <span>CSS</span>
+                </div>
+                <div class="progress-line css">
+                  <span class="progress-two"></span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="info">
+                  <span>jQuery</span>
+                </div>
+                <div class="progress-line jquery">
+                  <span class="progress-three"></span>
+                </div>
+              </div>
+              <div class="bar">
+                <div class="info">
+                  <span>Python</span>
+                </div>
+                <div class="progress-line python">
+                  <span class="progress-four"></span>
+                </div>
+              </div>
+            
+            </div>
+          </div>
         </div>
     </section>
          

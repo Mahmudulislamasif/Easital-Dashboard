@@ -10,6 +10,63 @@
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
 	<title>AdminSite</title>
     <style>
+      .tab_container{
+	width: 90%;
+	max-width: 1040px;
+	font-size:16px;
+}
+	
+.section-container {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.tab input {
+  display: none;
+}
+
+label {
+  display: inline-block;
+  margin: 0 0 -1px;
+  padding: 15px 25px;
+  font-weight: bold;
+  text-align: center;
+  color: #0B75B1;
+  border: 1px solid transparent;
+}
+
+label:before {
+  font-weight: normal;
+  margin-right: 10px;
+}
+
+label:hover {
+  color: #888;
+  cursor: pointer;
+}
+
+input:checked + label {
+  color: #636363;
+  border: 1px solid #ddd;
+
+}
+
+#tab1:checked ~ #content1,
+#tab2:checked ~ #content2,
+#tab3:checked ~ #content3,
+#tab4:checked ~ #content4,
+#tab5:checked ~ #content5,
+#tab6:checked ~ #content6,
+#tab7:checked ~ #content7 {
+  display: block;
+}
+ul > li{
+	margin-bottom: 10px;
+}
+
+
      .the_tabs {
   display: flex;
   flex-wrap: wrap;
@@ -23,7 +80,6 @@
 .the_tabs label {
   padding: 1rem 2.5rem;
   border-radius: 0.5rem 0.5rem 0rem 0rem;
-  outline: 0.063rem solid #d5d5d5;
   font-weight: bold;
 }
 
@@ -167,68 +223,112 @@
           </div>
         <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
             <div class="shadow-md bg-white rounded-lg p-5">
-              <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Default Badges</h1>
-              <body>
-                <div class="the_tabs">
-                  <input type="radio" id="tab_one" name="the_tabs" checked="checked">
-                  <label for="tab_one">Tab 1</label>
-                  <div class="tab">
-                    <h2>Tab One</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iste, eos, dignissimos reiciendis
-                      neque, eveniet eius quasi pariatur expedita cum tempora veniam voluptates maiores quidem!</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam sit voluptatum. Libero ipsum
-                      obcaecati possimus, voluptatibus rerum consequatur rem consequuntur doloribus voluptates eius eum
-                      voluptas labore dolorem!</p>
-                  </div>
-              
-                  <input type="radio" id="tab_two" name="the_tabs">
-                  <label for="tab_two">Tab 2</label>
-                  <div class="tab">
-                    <h2>Tab Two</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea nam recusandae quae nulla dignissimos
-                      consequuntur magni suscipit adipisci dolore quod fuga odio reprehenderit et, quia sapiente error vel
-                      unde.</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error laboriosam aut expedita, neque unde
-                      quaerat veritatis debitis magnam dolore perferendis voluptatum nemo optio sint quam! </p>
-                  </div>
-              
-                  <input type="radio" id="tab_three" name="the_tabs">
-                  <label for="tab_three">Tab 3</label>
-                  <div class="tab">
-                    <h2>Tab Three</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat saepe provident, fugiat aperiam
-                      laudantium fuga dolor cupiditate minima molestias cum quaerat omnis?</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, vero? Nostrum libero cupiditate est
-                      voluptas dolor necessitatibus temporibus omnis corrupti accusamus ex. Facere iure ex, ad iste et libero!
-                      Laboriosam iusto quas deserunt odio similique.</p>
-                  </div>
+              <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Default Tabs</h1>
+              <div class="the_tabs">
+                <input type="radio" id="tab_one" name="the_tabs" checked="checked">
+                <label for="tab_one">Tab 1</label>
+                <div class="tab">
+                  <h2>Tab One</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iste, eos, dignissimos reiciendis
+                    neque, eveniet eius quasi pariatur expedita cum tempora veniam voluptates maiores quidem!</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam sit voluptatum. Libero ipsum
+                    obcaecati possimus, voluptatibus rerum consequatur rem consequuntur doloribus voluptates eius eum
+                    voluptas labore dolorem!</p>
                 </div>
-              </body>
+            
+                <input type="radio" id="tab_two" name="the_tabs">
+                <label for="tab_two">Tab 2</label>
+                <div class="tab">
+                  <h2>Tab Two</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea nam recusandae quae nulla dignissimos
+                    consequuntur magni suscipit adipisci dolore quod fuga odio reprehenderit et, quia sapiente error vel
+                    unde.</p>
+                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error laboriosam aut expedita, neque unde
+                    quaerat veritatis debitis magnam dolore perferendis voluptatum nemo optio sint quam! </p>
+                </div>
+            
+                <input type="radio" id="tab_three" name="the_tabs">
+                <label for="tab_three">Tab 3</label>
+                <div class="tab">
+                  <h2>Tab Three</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat saepe provident, fugiat aperiam
+                    laudantium fuga dolor cupiditate minima molestias cum quaerat omnis?</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, vero? Nostrum libero cupiditate est
+                    voluptas dolor necessitatibus temporibus omnis corrupti accusamus ex. Facere iure ex, ad iste et libero!
+                    Laboriosam iusto quas deserunt odio similique.</p>
+                </div>
+                <input type="radio" id="tab_four" name="the_tabs">
+                <label for="tab_four">Tab 4</label>
+                <div class="tab">
+                  <h2>Tab Four</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat saepe provident, fugiat aperiam
+                    laudantium fuga dolor cupiditate minima molestias cum quaerat omnis?</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, vero? Nostrum libero cupiditate est
+                    voluptas dolor necessitatibus temporibus omnis corrupti accusamus ex. Facere iure ex, ad iste et libero!
+                    Laboriosam iusto quas deserunt odio similique.</p>
+                </div>
+              </div>
               
             </div>
             <div class="shadow-md bg-white rounded-lg p-5">
               <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Badges with shadow</h1>
-              <div class="flex overflow-hidden ">
-                <div
-                  class="bg-[#57B06C] text-white rounded-md font-medium text-base px-3 py-1 mr-3 shadow-md shadow-[#57B06C]">
-                  <h1>Active</h1>
+              <div class="container">
+                <div class="tab">
+                 <div>
+                  <input id="tab1" type="radio" name="tabs" checked>
+                  <label for="tab1">Features</label>
+                  <input id="tab2" type="radio" name="tabs">
+                  <label for="tab2">Specifications</label>
+                  <input id="tab3" type="radio" name="tabs">
+                  <label for="tab3">Reviews</label>
+                  <input id="tab4" type="radio" name="tabs">
+                  <label for="tab4">Downloads</label>
+                  <input id="tab5" type="radio" name="tabs">
+                  <label for="tab5">Models</label>
+                 </div>
+                  
+                <section id="content1" class=" section-container">
+                  <h2> Features Include:</h2>
+                  <ul>
+                    <li>Tabbed navigation</li>
+                    <li>HTML tabs with just CSS </li>
+                    <li>Clickable buttons</li>
+                    <li>Very simple</li>
+                    <li>No JavaScript</li>
+                  </ul>
+            
+                </section>
+                <!-- end of section 1 -->
+                <section id="content2" class=" section-container">
+                  <h2>Specifications</h2>
+                  <h4>Standard Specifications</h4>
+            
+                  <h4>General Specifications</h4>
+            
+                </section>
+            
+                <!-- end of section 2 -->
+                <section id="content3" class=" section-container">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut deserunt doloribus est. Perferendis porro esse autem nulla accusamus totam. Magnam?</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, tempore, itaque! Facere neque aut placeat quia quasi blanditiis ipsa mollitia magnam nobis facilis, dolore debitis architecto tempora dignissimos, qui consequatur, sapiente, iste in error tenetur aliquid quae eveniet. Ipsa pariatur, tenetur consequatur. Optio libero repellendus fuga dignissimos, error, quidem vitae! </p>
+                </section>
+                <!-- end of section 3 -->
+                <section id="content4" class=" section-container">
+                  <h2>Downloads</h2>
+            
+                </section>
+                <!-- end of section 4 -->
+                <section id="content5" class=" section-container">
+                  <h3>Product Model</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit natus cum veniam autem, ducimus porro, aspernatur repudiandae dignissimos expedita ipsam nostrum quia dolor sint voluptas obcaecati eum, modi quibusdam voluptatem.</p>
+                </section>
+                <!-- end of section 5 -->
+              
+                  <!-- end of section 6 -->
                 </div>
-                <div
-                  class="bg-[#0B75B1] text-white rounded-md font-medium text-base px-3 py-1 mr-3 shadow-md shadow-[#0B75B1]">
-                  <h1>Active</h1>
-                </div>
-                <div
-                  class="bg-[#F0A65B] text-white rounded-md font-medium text-base px-3 py-1 mr-3 shadow-md shadow-[#F0A65B]">
-                  <h1>Active</h1>
-                </div>
-                <div
-                  class="bg-[#F06D5B] text-white rounded-md font-medium text-base px-3 py-1 mr-3 shadow-md shadow-[#F06D5B]">
-                  <h1>Active</h1>
-                </div>
-                <div
-                  class="bg-[#333333] text-white rounded-md font-medium text-base px-3 py-1 mr-3 shadow-md shadow-[#333333]">
-                  <h1>Active</h1>
-                </div>
+                  
+            
+                  
               </div>
             </div>
             <div class="shadow-md bg-white rounded-lg p-5">
