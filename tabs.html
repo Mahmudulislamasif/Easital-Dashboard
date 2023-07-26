@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+	<title>AdminSite</title>
+    <style>
+     .the_tabs {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 75rem;
+}
+
+.the_tabs input[type="radio"] {
+  display: none;
+}
+
+.the_tabs label {
+  padding: 1rem 2.5rem;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  outline: 0.063rem solid #d5d5d5;
+  font-weight: bold;
+}
+
+.the_tabs .tab {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
+  outline: 0.063rem solid #d5d5d5;
+  order: 1;
+  display: none;
+}
+
+.the_tabs .tab h2 {
+  font-size: 2rem;
+}
+
+.the_tabs .tab p {
+  padding-bottom: 1rem;
+}
+
+.the_tabs input[type="radio"]:checked + label + .tab {
+  display: block;
+}
+
+.the_tabs input[type="radio"]:checked + label {
+  background: #0B75B1;
+  color: #ffffff;
+}
+
+      </style>
+</head>
+
+<body>
+	<!-- SIDEBAR -->
+  <section id="sidebar">
+		<a href="#" class="brand"> <img src="./assets/images/icons/logo.png" alt="" style="width: 30px;">
+			<h1>Easidash</h1>
+		</a>
+		<ul class="side-menu" id="sidebarLinks">
+			<li>
+				<a href="#"><i class='bx bxs-dashboard icon'></i> Dashboard <i class='bx bx-chevron-right icon-right'></i></a>
+				<ul class="side-dropdown">
+					<li><a href="index.html"><i class='bx bx-bar-chart-square dropdown-icon'></i><span>Analytics</span></i></a></li>
+         
+					<!-- <li>
+						<a href="#">Submenu <i class='bx bx-chevron-right icon-right'></i></a>
+						<ul class="side-dropdown-two">
+						  <li><a href="#">Submenu item 1</a></li>
+						  <li><a href="#">Submenu item 2</a></li>
+						  <li><a href="#">Submenu item 3</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Submenu <i class='bx bx-chevron-right icon-right'></i></a>
+						<ul class="side-dropdown-two">
+						  <li><a href="#">Submenu item 1</a></li>
+						  <li><a href="#">Submenu item 2</a></li>
+						  <li><a href="#">Submenu item 3</a></li>
+						</ul>
+					</li> -->
+				</ul>
+			</li>
+    
+			<li class="divider" data-text="main">Main</li>
+			<li>
+				<a href="#"><i class='bx bx-shopping-bag icon'></i> eCommerce <i class='bx bx-chevron-right icon-right'></i></a>
+				<ul class="side-dropdown">
+          <li><a href="shop.html"><i class='bx bx-shopping-bag icon'></i><span>Shop</span></i></a></li>
+          <li><a href="shop-details.html"><i class='bx bx-shopping-bag icon'></i><span>Details</span></i></a></li>
+          <li><a href="wishlist.html"><i class='bx bx-shopping-bag icon'></i><span>Wishlist</span></i></a></li>
+          <li><a href="product-checkout.html"><i class='bx bx-shopping-bag icon'></i><span>Checkout</span></i></a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class='bx bxs-inbox icon'></i> Components <i class='bx bx-chevron-right icon-right'></i></a>
+				<ul class="side-dropdown">
+					<li><a href="accordion.html"><i class='bx bx-shopping-bag icon'></i><span>Accordion</span></i></a></li>
+					<li><a href="alert.html"><i class='bx bx-shopping-bag icon'></i><span>Alert</span></i></a></li>
+					<li><a href="avatar.html"><i class='bx bx-shopping-bag icon'></i><span>Avatar</span></i></a></li>
+					<li><a href="badges.html"><i class='bx bx-shopping-bag icon'></i><span>Badges</span></i></a></li>
+					<li><a href="breadscrumb.html"><i class='bx bx-shopping-bag icon'></i><span>Breadscrump</span></i></a></li>
+					<li><a href="button.html"><i class='bx bx-shopping-bag icon'></i><span>Button</span></i></a></li>
+          <li><a href="progress.html"><i class='bx bx-shopping-bag icon'></i><span>Progress</span></i></a></li>
+				</ul>
+			</li>
+			<!-- <li><a href="#"><i class='bx bxs-chart icon'></i> Charts</a></li>
+			<li><a href="#"><i class='bx bxs-widget icon'></i> Widgets</a></li>
+			<li class="divider" data-text="table and forms">Table and forms</li>
+			<li><a href="#"><i class='bx bx-table icon'></i> Tables</a></li> -->
+			<!-- <li>
+				<a href="#"><i class='bx bxs-notepad icon'></i> Forms <i class='bx bx-chevron-right icon-right'></i></a>
+				<ul class="side-dropdown">
+					<li><a href="#">Basic</a></li>
+					<li><a href="#">Select</a></li>
+					<li><a href="#">Checkbox</a></li>
+					<li><a href="#">Radio</a></li>
+				</ul>
+			</li> -->
+		</ul>
+	</section>
+	<!-- NAVBAR -->
+	<nav class="content">
+		<i class='bx bx-menu toggle-sidebar'></i>
+		<form action="#">
+			<div class="form-group">
+				<input type="text" placeholder="Search...">
+				<i class='bx bx-search icon'></i>
+			</div>
+		</form>
+		<a href="#" class="nav-link">
+			<i class='bx bxs-bell icon'></i>
+			<span class="badge">5</span>
+		</a>
+		<a href="#" class="nav-link">
+			<i class='bx bxs-message-square-dots icon'></i>
+			<span class="badge">8</span>
+		</a>
+		<span class="divider"></span>
+		<div class="profile">
+			<img
+				src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+				alt="">
+			<ul class="profile-link">
+				<li><a href="#"><i class='bx bxs-user-circle icon'></i> Profile</a></li>
+				<li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+				<li><a href="#"><i class='bx bxs-log-out-circle'></i> Logout</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- NAVBAR -->
+
+	<!-- MAIN -->
+	<main class="content">
+	<section>
+        <div class="border-[1px] bg-[#F7F7F7] border-opacity-50 p-3 mb-5 rounded-md">
+            <div class="rounded-md">
+              <h1 class="text-base"><span class="text-[#333333] opacity-50">Home ></span><span
+                  class="text-[#333333] opacity-50"> Components ></span> <span class="text-[#333333] ">Accordion</span>
+              </h1>
+            </div>
+          </div>
+        <div class="grid md:grid-cols-2 grid-cols-1 gap-4">
+            <div class="shadow-md bg-white rounded-lg p-5">
+              <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Default Badges</h1>
+              <body>
+                <div class="the_tabs">
+                  <input type="radio" id="tab_one" name="the_tabs" checked="checked">
+                  <label for="tab_one">Tab 1</label>
+                  <div class="tab">
+                    <h2>Tab One</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat iste, eos, dignissimos reiciendis
+                      neque, eveniet eius quasi pariatur expedita cum tempora veniam voluptates maiores quidem!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore veniam sit voluptatum. Libero ipsum
+                      obcaecati possimus, voluptatibus rerum consequatur rem consequuntur doloribus voluptates eius eum
+                      voluptas labore dolorem!</p>
+                  </div>
+              
+                  <input type="radio" id="tab_two" name="the_tabs">
+                  <label for="tab_two">Tab 2</label>
+                  <div class="tab">
+                    <h2>Tab Two</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum ea nam recusandae quae nulla dignissimos
+                      consequuntur magni suscipit adipisci dolore quod fuga odio reprehenderit et, quia sapiente error vel
+                      unde.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error laboriosam aut expedita, neque unde
+                      quaerat veritatis debitis magnam dolore perferendis voluptatum nemo optio sint quam! </p>
+                  </div>
+              
+                  <input type="radio" id="tab_three" name="the_tabs">
+                  <label for="tab_three">Tab 3</label>
+                  <div class="tab">
+                    <h2>Tab Three</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat saepe provident, fugiat aperiam
+                      laudantium fuga dolor cupiditate minima molestias cum quaerat omnis?</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat, vero? Nostrum libero cupiditate est
+                      voluptas dolor necessitatibus temporibus omnis corrupti accusamus ex. Facere iure ex, ad iste et libero!
+                      Laboriosam iusto quas deserunt odio similique.</p>
+                  </div>
+                </div>
+              </body>
+              
+            </div>
+            <div class="shadow-md bg-white rounded-lg p-5">
+              <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Badges with shadow</h1>
+              <div class="flex overflow-hidden ">
+                <div
+                  class="bg-[#57B06C] text-white rounded-md font-medium text-base px-3 py-1 mr-3 shadow-md shadow-[#57B06C]">
+                  <h1>Active</h1>
+                </div>
+                <div
+                  class="bg-[#0B75B1] text-white rounded-md font-medium text-base px-3 py-1 mr-3 shadow-md shadow-[#0B75B1]">
+                  <h1>Active</h1>
+                </div>
+                <div
+                  class="bg-[#F0A65B] text-white rounded-md font-medium text-base px-3 py-1 mr-3 shadow-md shadow-[#F0A65B]">
+                  <h1>Active</h1>
+                </div>
+                <div
+                  class="bg-[#F06D5B] text-white rounded-md font-medium text-base px-3 py-1 mr-3 shadow-md shadow-[#F06D5B]">
+                  <h1>Active</h1>
+                </div>
+                <div
+                  class="bg-[#333333] text-white rounded-md font-medium text-base px-3 py-1 mr-3 shadow-md shadow-[#333333]">
+                  <h1>Active</h1>
+                </div>
+              </div>
+            </div>
+            <div class="shadow-md bg-white rounded-lg p-5">
+              <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Large Badges</h1>
+              <div class="flex ">
+                <div class="bg-[#57B06C] text-white rounded-md font-medium text-base px-3 py-1 mr-3">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#0B75B1] text-white rounded-md font-medium text-base px-3 py-1 mr-3">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#F0A65B] text-white rounded-md font-medium text-base px-3 py-1 mr-3">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#F06D5B] text-white rounded-md font-medium text-base px-3 py-1 mr-3">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#333333] text-white rounded-md font-medium text-base px-3 py-1 mr-3">
+                  <h1>Active</h1>
+                </div>
+              </div>
+            </div>
+            <div class="shadow-md bg-white rounded-lg p-5">
+              <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Border Badges</h1>
+              <div class="flex ">
+                <div
+                  class="bg-[#57B06C] bg-opacity-70 text-white rounded-md font-medium text-base px-3 py-1 mr-3 border-[1px] border-[#57B06C]">
+                  <h1>Active</h1>
+                </div>
+                <div
+                  class="bg-[#0B75B1] bg-opacity-70 text-white rounded-md font-medium text-base px-3 py-1 mr-3 border-[1px] border-[#0B75B1]">
+                  <h1>Active</h1>
+                </div>
+                <div
+                  class="bg-[#F0A65B] bg-opacity-70 text-white rounded-md font-medium text-base px-3 py-1 mr-3 border-[1px] border-[#F0A65B]">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#F06D5B] text-white rounded-md font-medium text-base px-3 py-1 mr-3">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#333333] text-white rounded-md font-medium text-base px-3 py-1 mr-3">
+                  <h1>Active</h1>
+                </div>
+              </div>
+            </div>
+            <div class="shadow-md bg-white rounded-lg p-5">
+              <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Rounded Badges</h1>
+              <div class="flex ">
+                <div class="bg-[#57B06C] text-white rounded-2xl font-medium text-base px-3 py-1 mr-3">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#0B75B1] text-white rounded-2xl font-medium text-base px-3 py-1 mr-3">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#F0A65B] text-white rounded-2xl font-medium text-base px-3 py-1 mr-3">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#F06D5B] text-white rounded-2xl font-medium text-base px-3 py-1 mr-3">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#333333] text-white rounded-2xl font-medium text-base px-3 py-1 mr-3">
+                  <h1>Active</h1>
+                </div>
+              </div>
+            </div>
+            <div class="shadow-md bg-white rounded-lg p-5">
+              <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Badges with icon</h1>
+              <div class="flex ">
+                <div class="bg-[#57B06C] text-white rounded-md font-medium text-base px-3 py-1 mr-3 flex">
+                  <img src="./assets/images/icons/Activity.png" alt="" class="mr-1">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#0B75B1] text-white rounded-md font-medium text-base px-3 py-1 mr-3 flex">
+                  <img src="./assets/images/icons/Activity.png" alt="" class="mr-1">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#F0A65B] text-white rounded-md font-medium text-base px-3 py-1 mr-3 flex">
+                  <img src="./assets/images/icons/Activity.png" alt="" class="mr-1">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#F06D5B] text-white rounded-md font-medium text-base px-3 py-1 mr-3 flex">
+                  <img src="./assets/images/icons/Activity.png" alt="" class="mr-1">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#333333] text-white rounded-md font-medium text-base px-3 py-1 mr-3 flex">
+                  <img src="./assets/images/icons/Activity.png" alt="" class="mr-1">
+                  <h1>Active</h1>
+                </div>
+              </div>
+            </div>
+            <div class="shadow-md bg-white rounded-lg p-5">
+              <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Link Badges</h1>
+              <div class="flex ">
+                <div class="bg-[#57B06C] text-white rounded-md font-medium text-base px-3 py-1 mr-3 flex items-center">
+                  <div>
+                    <img src="./assets/images/icons/copy.png" alt="" class="mr-1">
+                  </div>
+                  <div>
+                    <h1>Active</h1>
+                  </div>
+                </div>
+                <div class="bg-[#0B75B1] text-white rounded-md font-medium text-base px-3 py-1 mr-3 flex">
+                  <img src="./assets/images/icons/Activity.png" alt="" class="mr-1">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#F0A65B] text-white rounded-md font-medium text-base px-3 py-1 mr-3 flex">
+                  <img src="./assets/images/icons/Activity.png" alt="" class="mr-1">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#F06D5B] text-white rounded-md font-medium text-base px-3 py-1 mr-3 flex">
+                  <img src="./assets/images/icons/Activity.png" alt="" class="mr-1">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#333333] text-white rounded-md font-medium text-base px-3 py-1 mr-3 flex">
+                  <img src="./assets/images/icons/Activity.png" alt="" class="mr-1">
+                  <h1>Active</h1>
+                </div>
+              </div>
+            </div>
+            <div class="shadow-md bg-white rounded-lg  p-5">
+              <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Dismiss Badges</h1>
+              <div class="flex ">
+                <div class="bg-[#57B06C] text-white rounded-md font-medium text-base px-3 py-1 mr-3 flex items-center">
+                  <div>
+                    <img src="./assets/images/icons/copy.png" alt="" class="mr-1">
+                  </div>
+                  <div>
+                    <h1>Active</h1>
+                  </div>
+                </div>
+                <div class="bg-[#0B75B1] text-white rounded-md font-medium text-base px-3 py-1 mr-3 flex">
+                  <img src="./assets/images/icons/Activity.png" alt="" class="mr-1">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#F0A65B] text-white rounded-md font-medium text-base px-3 py-1 mr-3 flex">
+                  <img src="./assets/images/icons/Activity.png" alt="" class="mr-1">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#F06D5B] text-white rounded-md font-medium text-base px-3 py-1 mr-3 flex">
+                  <img src="./assets/images/icons/Activity.png" alt="" class="mr-1">
+                  <h1>Active</h1>
+                </div>
+                <div class="bg-[#333333] text-white rounded-md font-medium text-base px-3 py-1 mr-3 flex">
+                  <img src="./assets/images/icons/Activity.png" alt="" class="mr-1">
+                  <h1>Active</h1>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+         
+	</main>
+	<!-- MAIN -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="script.js"></script>
+	<script src="./assets/js/apex-chart.js"></script>
+    <script>
+        const tabs = document.querySelectorAll('.tab');
+        const tabPanes = document.querySelectorAll('.tab-pane');
+      
+        tabs.forEach(tab => {
+          tab.addEventListener('click', () => {
+            const tabNumber = tab.getAttribute('data-tab');
+      
+            tabs.forEach(tab => tab.classList.remove('tab-active'));
+            tab.classList.add('tab-active');
+      
+            tabPanes.forEach(pane => {
+              pane.classList.add('hidden');
+              if (pane.getAttribute('data-tab') === tabNumber) {
+                pane.classList.remove('hidden');
+              }
+            });
+          });
+        });
+      </script>
+</body>
+
+
+
+</html>
