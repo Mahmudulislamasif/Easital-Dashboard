@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css" rel="stylesheet" />
+	<title>AdminSite</title>
+    <link rel="stylesheet" href="./assets/css/spinner.css">
+</head>
+
+<body>
+	<!-- SIDEBAR -->
+  <section id="sidebar">
+		<a href="#" class="brand"> <img src="./assets/images/icons/logo.png" alt="" style="width: 30px;">
+			<h1>Easidash</h1>
+		</a>
+        <ul class="side-menu" id="sidebarLinks">
+			<li>
+				<a href="#"><i class='bx bxs-dashboard icon'></i> Dashboard <i class='bx bx-chevron-right icon-right'></i></a>
+				<ul class="side-dropdown">
+					<li><a href="index.html"><i class='bx bx-bar-chart-square dropdown-icon'></i><span>Analytics</span></i></a></li>
+         
+					<!-- <li>
+						<a href="#">Submenu <i class='bx bx-chevron-right icon-right'></i></a>
+						<ul class="side-dropdown-two">
+						  <li><a href="#">Submenu item 1</a></li>
+						  <li><a href="#">Submenu item 2</a></li>
+						  <li><a href="#">Submenu item 3</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">Submenu <i class='bx bx-chevron-right icon-right'></i></a>
+						<ul class="side-dropdown-two">
+						  <li><a href="#">Submenu item 1</a></li>
+						  <li><a href="#">Submenu item 2</a></li>
+						  <li><a href="#">Submenu item 3</a></li>
+						</ul>
+					</li> -->
+				</ul>
+			</li>
+    
+			<li class="divider" data-text="main">Main</li>
+			<li>
+				<a href="#"><i class='bx bx-shopping-bag icon'></i> eCommerce <i class='bx bx-chevron-right icon-right'></i></a>
+				<ul class="side-dropdown">
+          <li><a href="shop.html"><i class='bx bx-radio-circle icon'></i><span>Shop</span></i></a></li>
+          <li><a href="shop-details.html"><i class='bx bx-radio-circle icon'></i><span>Details</span></i></a></li>
+          <li><a href="wishlist.html"><i class='bx bx-radio-circle icon'></i><span>Wishlist</span></i></a></li>
+          <li><a href="product-checkout.html"><i class='bx bx-radio-circle icon'></i><span>Checkout</span></i></a></li>
+				</ul>
+			</li>
+			<li>
+				<a href="#"><i class='bx bxs-inbox icon'></i> Components <i class='bx bx-chevron-right icon-right'></i></a>
+				<ul class="side-dropdown">
+					<li><a href="accordion.html"> <i class='bx bx-radio-circle icon'></i><span>Accordion</span></i></a></li>
+					<li><a href="alert.html"><i class='bx bx bx-radio-circle icon'></i><span>Alert</span></i></a></li>
+					<li><a href="avatar.html"><i class='bx bx bx-radio-circle icon'></i><span>Avatar</span></i></a></li>
+					<li><a href="badges.html"><i class='bx bx bx-radio-circle icon'></i><span>Badges</span></i></a></li>
+					<li><a href="breadscrumb.html"><i class='bx bx bx-radio-circle icon'></i><span>Breadscrump</span></i></a></li>
+					<li><a href="button.html"><i class='bx bx bx-radio-circle icon'></i><span>Button</span></i></a></li>
+          <li><a href="progress.html"><i class='bx bx bx-radio-circle icon'></i><span>Progress</span></i></a></li>
+          <li><a href="dropdown.html"><i class='bx bx bx-radio-circle icon'></i><span>Dropdown
+          </span></i></a></li>
+				</ul>
+			</li>
+			<!-- <li><a href="#"><i class='bx bxs-chart icon'></i> Charts</a></li>
+			<li><a href="#"><i class='bx bxs-widget icon'></i> Widgets</a></li>
+			<li class="divider" data-text="table and forms">Table and forms</li>
+			<li><a href="#"><i class='bx bx-table icon'></i> Tables</a></li> -->
+			<!-- <li>
+				<a href="#"><i class='bx bxs-notepad icon'></i> Forms <i class='bx bx-chevron-right icon-right'></i></a>
+				<ul class="side-dropdown">
+					<li><a href="#">Basic</a></li>
+					<li><a href="#">Select</a></li>
+					<li><a href="#">Checkbox</a></li>
+					<li><a href="#">Radio</a></li>
+				</ul>
+			</li> -->
+		</ul>
+	</section>
+	<!-- NAVBAR -->
+	<nav class="content">
+		<i class='bx bx-menu toggle-sidebar'></i>
+		<form action="#">
+			<div class="form-group">
+				<input type="text" placeholder="Search...">
+				<i class='bx bx-search icon'></i>
+			</div>
+		</form>
+		<a href="#" class="nav-link">
+			<i class='bx bxs-bell icon'></i>
+			<span class="badge">5</span>
+		</a>
+		<a href="#" class="nav-link">
+			<i class='bx bxs-message-square-dots icon'></i>
+			<span class="badge">8</span>
+		</a>
+		<span class="divider"></span>
+		<div class="profile">
+			<img
+				src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cGVvcGxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+				alt="">
+			<ul class="profile-link">
+				<li><a href="#"><i class='bx bxs-user-circle icon'></i> Profile</a></li>
+				<li><a href="#"><i class='bx bxs-cog'></i> Settings</a></li>
+				<li><a href="#"><i class='bx bxs-log-out-circle'></i> Logout</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- NAVBAR -->
+
+	<!-- MAIN -->
+	<main class="content">
+		<!-- Welcome Section Start-->
+		<section>
+      <div>
+        <div>
+          <div class="border-[1px] bg-[#F7F7F7] border-opacity-50 p-3 mb-5 rounded-md">
+            <div class="rounded-md">
+              <h1 class="text-base"><span class="text-[#333333] opacity-50">Home ></span><span
+                  class="text-[#333333] opacity-50"> Components ></span> <span class="text-[#333333] ">Accordion</span>
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Default Spiner</h1>
+            <div class="flex flex-wrap gap-4">
+                    <div role="status">
+                        <svg aria-hidden="true" class="inline w-10 h-10 mr-2 text-gray-200 animate-spin  fill-[#F0DF84]" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                            <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+                        </svg>
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div role="status">
+                        <svg aria-hidden="true" class="inline w-10 h-10 mr-2 text-gray-200 animate-spin  fill-[#F0A65B] dark:fill-gray-300" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                            <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+                        </svg>
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div role="status">
+                        <svg aria-hidden="true" class="inline w-10 h-10 mr-2 text-gray-200 animate-spin  fill-[#6B67BB]" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                            <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+                        </svg>
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div role="status">
+                        <svg aria-hidden="true" class="inline w-10 h-10 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-red-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                            <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+                        </svg>
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div role="status">
+                        <svg aria-hidden="true" class="inline w-10 h-10 mr-2 text-gray-200 fill-[#3BA8A3] animate-spin dark:text-gray-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                            <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+                        </svg>
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div role="status">
+                        <svg aria-hidden="true" class="inline w-10 h-10 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-pink-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                            <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+                        </svg>
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div role="status">
+                        <svg aria-hidden="true" class="inline w-10 h-10 mr-2 text-gray-200 animate-spin dark:text-gray-600 fill-purple-600" viewBox="0 0 100 101" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z" fill="currentColor"/>
+                            <path d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z" fill="currentFill"/>
+                        </svg>
+                        <span class="sr-only">Loading...</span>
+                    </div>
+            </div>
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Cut Spinner</h1>
+            <div class="flex flex-wrap gap-3">
+             <div class="spinner-part"></div>
+             <div class="spinner-part-two"></div>
+             <div class="spinner-part-three"></div>
+            </div>
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Size Avater</h1>
+            <div class="flex flex-wrap gap-3">
+                <div v-if="loading" class="spinner-wave">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                  </div>
+                  <div v-if="loading" class="spinner-wave spinner-wave-two">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                  </div>
+                  <div v-if="loading" class="spinner-wave spinner-wave-three">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                  </div>
+               </div>
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Icon Avater</h1>
+            <div class="spinner-overlay" id="animation-overlay">
+                <div class="spinner-overlay__inner">
+                  <div class="spinner">
+                    <div class="spinner__bounce spinner__bounce--1"></div>
+                    <div class="spinner__bounce spinner__bounce--2"></div>
+                    <div class="spinner__bounce spinner__bounce--3"></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Shapes</h1>
+            <div class="flex flex-wrap gap-3">
+              <img src="./assets/images/avatar/avater-image-1.png" class="mr-3" alt="">
+              <img src="./assets/images/avatar/avater-image-2.png" class="mr-3 rounded-md" alt="">
+              <img src="./assets/images/avatar/avater-image-4.png" class="mr-3 rounded-full" alt="">
+              <img src="./assets/images/avatar/avater-image-5.png" class="mr-3 pentagon" alt="">
+              <img src="./assets/images/avatar/avater-image-6.png" class="mr-3 hexagon" alt="">
+            </div>
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Border Avatar</h1>
+            <div class="flex flex-wrap gap-3">
+              <img src="./assets/images/avatar/avater-image-1.png" class="mr-3 border-2 rounded-full border-[#F0DF84]"
+                alt="">
+              <div
+                class="relative inline-flex items-center justify-center w-16 h-16 overflow-hidden border-2 border-[#F0DF84] bg-[#F0A65B] rounded-full mr-3">
+                <img src="./assets/images/icons/Activity.png" alt="">
+              </div>
+              <div
+                class="relative inline-flex items-center justify-center w-16 h-16 overflow-hidden bg-[#6B67BB] border-[#F0DF84]  border-2 rounded-full mr-3">
+                <span class="font-medium text-white text-3xl ">C</span>
+              </div>
+              <div
+                class="relative inline-flex items-center justify-center w-16 h-16 overflow-hidden bg-[#9DD4AB] border-[#F0DF84]  border-2 rounded-full mr-3">
+                <img src="./assets/images/icons/checked.png" alt="">
+              </div>
+              <div
+                class="relative inline-flex items-center justify-center w-16 h-16 overflow-hidden bg-[#D49D9D] border-[#F0DF84]  border-2 rounded-full mr-3">
+                <img src="./assets/images/icons/red-flag.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Fallback Avatar</h1>
+            <div class="flex flex-wrap gap-3">
+              <img src="./assets/images/avatar/avater-image-2.png" class="mr-3 rounded-full " alt="">
+              <div
+                class="relative inline-flex items-center justify-center w-16 h-16 overflow-hidden bg-[#6B67BB]  rounded-full mr-3">
+                <span class="font-medium text-white text-3xl ">B</span>
+              </div>
+              <div
+                class="relative inline-flex items-center justify-center w-16 h-16 overflow-hidden bg-[#6B67BB] rounded-full mr-3">
+                <img src="./assets/images/icons/Hide.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Group Avatar</h1>
+            <div class="flex gap-1 mt-2">
+              <div class="flex -space-x-4 cursor-pointer">
+                <img
+                  class="w-14 h-14 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-in"
+                  src="./assets/images/avatar/avater-image-1.png" alt="">
+                <img
+                  class="w-14 h-14 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                  src="./assets/images/avatar/avater-image-2.png" alt="">
+                <img
+                  class="w-14 h-14 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                  src="./assets/images/avatar/avater-image-3.png" alt="">
+                <img
+                  class="w-14 h-14 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                  src="./assets/images/avatar/avater-image-4.png" alt="">
+                <img
+                  class="w-14 h-14 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                  src="./assets/images/avatar/avater-image-5.png" alt="">
+
+              </div>
+            </div>
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Group Avatar with tooltip</h1>
+            <!-- Light style tooltip -->
+            <div class="flex gap-1 mt-2">
+              <div class="flex -space-x-4 cursor-pointer">
+                <button data-tooltip-target="tooltip-default" type="button">
+                  <img
+                    class="w-14 h-14 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-in"
+                    src="./assets/images/avatar/avater-image-1.png" alt="">
+                </button>
+                <div id="tooltip-default" role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  Elicia
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <button data-tooltip-target="tooltip-default-1" type="button">
+                  <img
+                    class="w-14 h-14 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avater-image-2.png" alt="">
+                </button>
+                <div id="tooltip-default-1" role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  Mark
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <button data-tooltip-target="tooltip-default-2" type="button">
+                  <img
+                    class="w-14 h-14 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avater-image-3.png" alt="">
+                </button>
+                <div id="tooltip-default-2" role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  Julee
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <button data-tooltip-target="tooltip-default-3" type="button">
+                  <img
+                    class="w-14 h-14 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avater-image-4.png" alt="">
+                </button>
+                <div id="tooltip-default-3" role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  Rossignol
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+                <button data-tooltip-target="tooltip-default-4" type="button">
+                  <img
+                    class="w-14 h-14 rounded-full border-2 border-white dark:border-gray-800 transition hover:-translate-y-1 delay-100 duration-200 ease-out"
+                    src="./assets/images/avatar/avater-image-5.png" alt="">
+                </button>
+                <div id="tooltip-default-4" role="tooltip"
+                  class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
+                  Looper
+                  <div class="tooltip-arrow" data-popper-arrow></div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Avatar with badges</h1>
+            <div class="flex flex-wrap gap-3 items-center">
+              <div class="relative mr-3">
+                <img class="w-14 h-14 rounded-full" src="./assets/images/avatar/avater-image-1.png" alt="">
+                <span
+                  class="bottom-0 left-10 absolute  w-3.5 h-3.5 bg-[#57B06C] border-2 border-white dark:border-gray-800 rounded-full"></span>
+              </div>
+              <div class="relative mr-3">
+                <img class="w-14 h-14 rounded-full" src="./assets/images/avatar/avater-image-2.png" alt="">
+                <span
+                  class="bottom-0 left-10 absolute  w-3.5 h-3.5 bg-[#0B75B1] border-2 border-white dark:border-gray-800 rounded-full"></span>
+              </div>
+              <div class="relative mr-3">
+                <img class="w-14 h-14 rounded-full" src="./assets/images/avatar/avater-image-3.png" alt="">
+                <span
+                  class="bottom-0 left-10 absolute  w-3.5 h-3.5 bg-[#333333] border-2 border-white dark:border-gray-800 rounded-full"></span>
+              </div>
+              <div class="relative mr-3">
+                <img class="w-14 h-14 rounded-full" src="./assets/images/avatar/avater-image-4.png" alt="">
+                <span
+                  class="bottom-0 left-10 absolute  w-3.5 h-3.5 bg-[#F0A65B] border-2 border-white dark:border-gray-800 rounded-full"></span>
+              </div>
+              <div class="relative mr-3">
+                <img class="w-14 h-14 rounded-full" src="./assets/images/avatar/avater-image-5.png" alt="">
+                <span
+                  class="bottom-0 left-10 absolute  w-3.5 h-3.5 bg-[#F0A65B] border-2 border-white dark:border-gray-800 rounded-full"></span>
+              </div>
+              <div class="relative mr-3">
+                <img class="w-14 h-14 rounded-full" src="./assets/images/avatar/avater-image-6.png" alt="">
+                <span
+                  class="bottom-0 left-10 absolute  w-3.5 h-3.5 bg-[#F0A65B] border-2 border-white dark:border-gray-800 rounded-full"></span>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-md bg-white rounded-lg p-5">
+            <h1 class="text-xl mb-10 font-medium text-[#0B75B1]">Light Color Avatar</h1>
+            <div class="flex ">
+              <div
+                class="relative inline-flex items-center justify-center w-14 h-14 overflow-hidden bg-[#F0DF84] rounded-full mr-3">
+                <span class="font-medium text-white text-3xl ">A</span>
+              </div>
+              <div
+                class="relative inline-flex items-center justify-center w-14 h-14 overflow-hidden bg-[#F0A65B] rounded-full mr-3">
+                <span class="font-medium text-white text-3xl ">B</span>
+              </div>
+              <div
+                class="relative inline-flex items-center justify-center w-14 h-14 overflow-hidden bg-[#6B67BB] rounded-full mr-3">
+                <span class="font-medium text-white text-3xl ">C</span>
+              </div>
+              <div
+                class="relative inline-flex items-center justify-center w-14 h-14 overflow-hidden bg-[#3BA8A3] rounded-full mr-3">
+                <span class="font-medium text-white text-3xl ">D</span>
+              </div>
+              <div
+                class="relative inline-flex items-center justify-center w-14 h-14 overflow-hidden bg-[#9DD4AB] rounded-full mr-3">
+                <span class="font-medium text-white text-3xl ">E</span>
+              </div>
+              <div
+                class="relative inline-flex items-center justify-center w-14 h-14 overflow-hidden bg-[#D49D9D] rounded-full mr-3">
+                <span class="font-medium text-white text-3xl">F</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	</main>
+    <script>setTimeout(() => {
+        document.getElementById('animation-overlay').style.display = 'block';
+       }, 1500);
+       
+       setTimeout(() => {
+        document.getElementById('animation-overlay').style.display = 'none';
+       }, 5500);
+       </script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+	<script src="script.js"></script>
+	<script src="./assets/js/apex-chart.js"></script>
+</body>
+
+
+
+</html>
